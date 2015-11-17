@@ -1,0 +1,64 @@
+Explanations(説明)
+
+Creation of groups(グループの作成)
+The contest system is based on the creation of student groups. This helps to reduce the amount of information you need to provide before the contest. (You declare groups, rather than every student.) This also reduces the number of contest access codes - one per group.
+コンテストのシステムは、学生グループの作成に基づいています。これは、コンテストの前に提供する必要がある情報の量を減らすのに役立ちます。 （あなたは、むしろすべての生徒よりも、グループを明らかにします。）これはまた、コンテストのアクセスコードの数を減少させる - グループごとに1つを。
+
+
+To prepare for the contest in your school:
+あなたの学校でのコンテストの準備をするには:
+
+1. Make a list of "groups" your school needs.
+1. あなたの学校の必要なリスト「グループ」の作成
+
+
+A "group" consists of students being entered at the same level and participating in the contest at the same time. For example, if you want all the students from class 6e to enter in the same hour, that's a group. If you want to have half of the class of 6e on one day (same hour) and another on a different day that would mean two groups. Students from different classes in the 6th grade participating during the same hour, that's one group. If you want some students from the 6th grade and some students from 4th grade to participate at the same time, that's two groups.
+
+「グループ」は、同じレベルのコンテストに同時に参加する学生で構成されています。
+例えば、あなたはクラス6Eのすべての学生が同じ時間で入力したい場合、そのグループです。
+もし、あなたが2グループを意味している違う日(同じ時間)の6eのクラスと別のクラスの半分を持ちたければ、
+同じ時間帯に参加する6年生で異なるクラスの学生は、その1つのグループです。(クラスが違ってても同じ時間帯なら同じグループである)
+あなたは6年生からいくつかの学生と4年生からいくつかの学生が同時に参加したい場合は、それが二つのグループです。
+
+
+
+
+2. In the GROUP tab, create your groups : declare the name, level, participation date, and the size of each group.
+2. [グループ]タブでは、自分のグループを作成します : 名前、レベル、参加日、各グループのサイズを宣言します。
+
+
+When creating groups, you don't need to provide the names of students. This information will be provided by the students themselves when they start the contest.
+グループを作成するときは、学生の名前を指定する必要はありません。彼らはコンテストを開始すると、この情報は、学生自身によって提供されます。
+
+
+When creating each group, two codes will automatically be generated:
+各グループを作成する場合、2つのコードが自動的に生成されます :
+
+
+An access code for the students of the group, that they will use to access the contest.
+Warning : the access code of a group will only work for 30mins starting from when the first student uses it to participate. It is therefore important to create at least as many groups as participation sessions.
+彼らはコンテストにアクセスするために使用するグループの学生のためのアクセスコード。
+警告：グループのアクセスコードは、参加するために最初の学生がそれを使用する時から始まる30minsのために働くだけである。従って、参加セッションと同じくらい少なくとも多いグループを作成することが重要である。
+
+A secret code for the teacher's use only who will supervise the group during the contest.
+Warning: It will be needed by the teacher in the rare case when a student is interrupted in the middle of the contest.
+コンテスト中にグループを監督する教師のために秘密のコードは使う。
+警告：学生がコンテストの途中で中断されたときにまれなケースで、教師によって必要とされるであろう。
+
+
+
+3. Before the contest week, in the GROUP tab, print the information sheet required by the teacher that will supervise each group.
+3.コンテストの週前に、グループのタブで、各グループを監督する教員が必要とする情報シートを印刷します。
+
+This information sheet explains how the contest takes place and provides the group codes.
+コンテストが行われると、グループコードをどのように提供するか、この情報シートは説明しています。
+
+
+
+Do you want to organize training sessions using past contests?
+
+Proceed in the same way, but don't forget that you will need different groups for the training and the contest.
+
+あなたは過去のコンテストを使用してトレーニングセッションを整理しますか？
+
+同じように進んでいますが、トレーニングやコンテストのためのさまざまなグループが必要になることを忘れないでください。
