@@ -1,9 +1,8 @@
-<!-- "__"を設定!! -->
 <!doctype html>
 <html>
    <head>
       <meta charset="utf-8">
-      <title>タイトル</title>
+      <title>三原色</title>
     <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
     <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
@@ -16,15 +15,15 @@
     <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
       <script class="task" type="text/javascript">
          stdAnsTypes.genTaskMultipleChoices(4, [
-            "__",
-            "__",
-            "__",
-            "__"
-            ], "added", "#answers_choice_tmp");
+            "<img src='RGB1.png'  width='100'>",
+            "<img src='RGB2.png'  width='100'>",
+            "<img src='RGB3.png'  width='100'>",
+            "<img src='RGB4.png'  width='100'>"
+            ], "added", "#answers_rotation");
       </script>
 
       <script class="remove" type="text/javascript">var json = {
-    "id": "http://castor-informatique.fr/tasks/Benjamin/choice_tmp/",
+    "id": "http://castor-informatique.fr/tasks/Benjamin/rotation/",
     "language": "fr",
     "version": "fr.01",
     "authors": "",
@@ -33,41 +32,44 @@
     "taskPathPrefix": "",
     "modulesPathPrefix": "",
     "browserSupport": [],
-    "acceptedAnswers": ["__"]
+    "acceptedAnswers": ["4"]
 };</script>
    </head>
    <body>
       <div id="task"> <!-- 問題内容 -->
-<h1>問題タイトル</h1>
-<p>
-問題文
-</p>
+<h1>三原色</h1>
 
-<div class="reponses" id="answers_choice_tmp">
+<p align="middle"><img src="RGB0.jpg"></p>
+<p>携帯電話やパソコンなどの画面は、赤、緑、青の三色で色を表しています。</p>
+
+<p>上の図のように、横8個、縦11個のます目に途中まで色が塗られています。 色は、1行目は青と緑、2行目は緑と赤、3行目は青と緑のように交互に並びます。</p>
+
+<b>全体が交互に並ぶとき、右下の影の部分はどのような色になるでしょう。</b>
+
+<div class="reponses" id="answers_rotation">
 </div>
+
 
 </div> <!-- 問題終わり -->
 
-
       <div id="solution"> <!-- 解答内容 -->
-h2>解答</h2>
+<h2>解答</h2>
 <p>
-  正解は「Aから始める」
+  正解は
+  <p><img src='RGB4.png'  width='100'> </p>
+  最下行を見ると、青と緑の繰り返しになっている。また、右端の列を見ると、緑と赤の繰り返しになっている。
 </p>
 
 <h2>解説</h2>
 <p>
-一般的には一筆書きとして知られている問題です。
-一筆書きは情報科学では，グラフ理論によって説明できます。情報科学でのグラフとは，線と点で表わされた図を意味します。
-今，点と線の関係を考えると，始点と終点では一つの点から線が1本繋がっている必要があります（始点と終点が同じ場合は点に繋がる線は2本となります）。また，それ以外の点（通過する点）では，一つの点につき，入って行く線と出て行く線の２本（又は２の倍数本）が必要となります。
-「これをまとめると，一筆書きできる条件は，
-１）始点と終点が異なる場合は，始点と終点と繋がる線はそれぞれ奇数本であり，それ以外の全ての点と繋がる線は偶数本となる。
-２）始点と終点が同じ場合は、全ての点と繋がる線は偶数本である。
-こととなります。」
-今回の問題ではＡの点とＥの点は３本の線（道）が繋がっており，Ｄが２本，それ以外の点は４本となっています。従って，始点はＡかＥということになりますが，選択肢にはＡしかありませんので，「Ａから始める」が正解となります。
+パソコンや携帯電話の画面では、「赤、緑、青」の三色を組み合わせることで、さまざまな色を表現しています。
 </p>
-   
-   
+<p>
+  元の絵
+  <p><img src='pict1.jpg' width="50"> </p>
+  拡大図
+  <p><img src='pict2.png'> </p>
+
    
 </div> <!-- 解答終わり -->
    </body>
