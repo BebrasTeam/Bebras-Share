@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>回転命令</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "<img src='puzzle_a.png'  width='100'>",
+            "<img src='puzzle_b.png'  width='100'>",
+            "<img src='puzzle_c.png'  width='100'>",
+            "<img src='puzzle_d.png'  width='100'>"
+            ], "added", "#answers_rotation");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/Benjamin/rotation/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["4"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>回転命令</h1>
+
+<p align="middle"><img src="rotation01.png"></p>
+図形を回転させる命令があります。この命令を１回使うと，図形は時計回りに90度回転します。この命令は何度でも使えます。
+
+<p align="middle"><img src="rotation02.png"></p>
+<b>この命令を使って上の図形から作れないのはどれでしょう？</b>
+
+<div class="reponses" id="answers_rotation">
+</div>
+
+
+</div> <!-- 問題終わり -->
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+  正解は「Ｄ」
+</p>
+<p>
+この命令を，<br> 
+1回使えば「Ｂ」となります。<br>
+2回使えば「Ｃ」となります。<br>
+3回使えば「Ａ」となります。<br>
+</p>
+
+<h2>解説</h2>
+<p>
+図形の直線の部分に注目します。<br>
+図形の上の部分が直線となるのは「Ｂ」と「Ｄ」ですが，「Ｄ」は回転だけでは作ることができません。
+</p>
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>
