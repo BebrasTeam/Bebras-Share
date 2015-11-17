@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   卒業研究報告書用スタイルファイル
+% 
+%    Edited by Sei'ichi TANI
+%  
+% 	2001/01/10
+%	2002/01/31
+%   	2002/12/27
+%	2003/01/16
+%　	2003/02/08 (by Masahiko MURAKAMI)
+%	2003/02/11 (by S. Tani)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% デフォルトでインクルードするパッケージの宣言
+\usepackage{fancyhdr}
+\usepackage{time}
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{multicol}
+\usepackage{layout}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\pagestyle{fancyplain}
+
+% ページパラメータの設定
+% 1 inch = 72.27pt
+\voffset 0pt
+\hoffset 0mm
+\textheight 680pt
+\oddsidemargin -20pt
+\marginparwidth 0pt
+\marginparsep 0pt
+\topmargin -10pt
+\columnsep 20pt
+
+\parskip 0pt
+% \textwidth の計算
+% \textwidth = \paperwidth - 2*72.25pt - 2*\oddsidemargin
+% 計算用の変数の宣言
+\newdimen\tmptextwidth
+\newdimen\jptitlewidth
+\newdimen\etitlewidth
+\newdimen\onecolumnwidth
+\tmptextwidth \paperwidth
+\advance\tmptextwidth-144.5pt
+\advance\tmptextwidth-2\oddsidemargin
+\textwidth \tmptextwidth
+
+\jptitlewidth \textwidth
+\etitlewidth \textwidth
+\advance \jptitlewidth - 20mm
+\advance \etitlewidth - 10mm
+
+\onecolumnwidth\textwidth
+\advance\onecolumnwidth-\columnsep
+\divide\onecolumnwidth by 2
+
+
+% 長さ表示用のコマンド(長さからカウンタへ変換)
+\def\ConvertToCount#1#2{%
+  #1=#2
+  \divide #1 by 65536}
+\newcount\tempparam
+%\ConvertToCount\tempparam\columnsep
+%\ConvertToCount\tempparam\onecolumnwidth
+
+\long\def\jptitle#1{\long\gdef\@jptitle{#1}}
+\long\def\etitle#1{\long\gdef\@etitle{#1}}
+\long\def\eauthor#1{\long\gdef\@eauthor{#1}}
+\long\def\jpauthor#1{\long\gdef\@jpauthor{#1}}
+\long\def\course#1{\long\gdef\@course{#1}}
+\long\def\jpcourse#1{\long\gdef\@jpcourse{#1}}
+\long\def\ecourse#1{\long\gdef\@ecourse{#1}}
+\long\def\year#1{\long\gdef\@year{#1}}
+\long\def\abstract#1{\long\gdef\@abstract{#1}}
+
+
+\def\maketitle{\newpage
+%\noindent{\bf 卒業研究発表会レジュメ(平成\@year 年度)}
+\begin{center}
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\jptitlewidth {\LARGE \bf\@jptitle}}\hfill} 
+\vskip 3mm
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\etitlewidth {\large \bf \@etitle}}\hfill}
+\end{center}
+\begin{flushright}
+\begin{tabular}[t]{r}
+{\large \bf \@course  \hspace{1em} \@jpauthor} \\
+{\bf \@eauthor}
+\end{tabular}
+\end{flushright}
+{
+
+
+\hbox to \textwidth{\hfill\fbox{\normalsize \bf \ 概要 }\hfill}
+\vskip 2mm
+
+\advance\baselineskip-3pt
+\@abstract
+
+\vskip 5mm
+
+}
+
+}
+
+\def\resumetitle{\newpage
+\begin{center}
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\jptitlewidth {\LARGE \bf\@jptitle}}\hfill} 
+\vskip 3mm
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\etitlewidth {\large \bf \@etitle}}\hfill}
+\end{center}
+\begin{flushright}
+\begin{tabular}[t]{r}
+{\large \bf \@course \hspace{1em} \@jpauthor} \\
+{\bf \@eauthor}
+\end{tabular}
+\end{flushright}
+
+\hbox to \textwidth{\hfill{\normalsize \bf あらまし }\hfill}
+
+%\vskip 2mm
+
+\advance\baselineskip-2pt
+\@abstract
+
+\vskip 5mm
+
+}
+
+\def\ieicetitle{\newpage
+\begin{center}
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\jptitlewidth {\LARGE \bf\@jptitle}}\hfill} 
+\vskip 3mm
+\noindent\hbox to \textwidth{\hfill\vbox{\hsize=\etitlewidth {\large \bf \@etitle}}\hfill}
+\end{center}
+
+\begin{center}
+{\bf 
+\begin{tabular}{\authorformat}
+ \@jpauthor \\
+ \@eauthor 
+\end{tabular} \\
+\noindent \@jpcourse \\
+ \@ecourse
+}
+\end{center}
+}
+
+% ヘッダ・フッタについて
+% デフォルトのページスタイルの宣言
+
+\def\headrulewidth{1mm}
+\def\footrulewidth{1pt}
+\def\compiletime{\today \now}
+\topmargin -25pt
+\headsep 20pt
+\headheight 12pt
+\headwidth \textwidth
+\footskip 30pt
+\lhead{\bf  卒業研究報告書(平成\@year 年度)}
+\chead{}
+\rhead{}
+\rfoot{\bf 日本大学文理学部応用数学科}
+\lfoot{\thepage}
+\cfoot{}
+
+
+% 最終更新時刻の挿入
+\def\compheading{
+\rhead{[\compiletime]}
+}
+
+%\rhead{\arabic{page}}
+
+% sectionの間隔調整のためコマンドを再定義する
+\def\section{\@startsection{section}{1}{\z@}%
+   {0\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+%   {1.5\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+   {.2\Cvs \@plus.3\Cdp}%
+%   {.5\Cvs \@plus.3\Cdp}%
+   {\reset@font\Large\bfseries}}
+\def\subsection{\@startsection{subsection}{2}{\z@}%
+   {0.2\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+   {.2\Cvs \@plus.3\Cdp}%
+   {\reset@font\large\bfseries}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+   {0.2\Cvs \@plus.5\Cdp \@minus.2\Cdp}%
+   {.2\Cvs \@plus.3\Cdp}%
+   {\reset@font\normalsize\bfseries}}
+\def\paragraph{\@startsection{paragraph}{4}{\z@}%
+   {3.25ex \@plus 1ex \@minus .2ex}%
+   {-1em}%
+   {\reset@font\normalsize\bfseries}}
+\def\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+   {3.25ex \@plus 1ex \@minus .2ex}%
+   {-1em}%
+   {\reset@font\normalsize\bfseries}}
+
+% for figure 
+% for caption
+\abovecaptionskip 0pt
+\belowcaptionskip 0pt
+\def\figurename{図}
+
+% for table
+\def\tablename{表}
+
+%\abovedisplayskip 0pt plus -30pt minus 10pt 
+%\belowdisplayskip 100pt plus 3pt minus 10pt 
+%\abovedisplayshortskip \z@ plus 0pt
+%\belowdisplayskip 100pt plus 3pt minus 10pt 
+%\belowdisplayshortskip 0pt plus 0pt minus 1pt
+
+\displayindent 0mm
+
+\let\@aligntmp\align
+\let\@endaligntmp\endalign
+
+\newdimen\alignbeforeskip
+\newdimen\alignafterskip
+\alignbeforeskip 0mm
+\alignafterskip 0mm
+
+\def\align{
+\vspace*{\alignbeforeskip}
+\@aligntmp
+}
+
+\def\endalign{
+\@endaligntmp
+\vspace*{\alignafterskip}
+}
+
+\let\@eqnarraytemp\eqnarray
+\let\@endeqnarraytemp\endeqnarray
+
+\newdimen\eqnarraybeforeskip
+\newdimen\eqnarrayafterskip
+\eqnarraybeforeskip 0mm
+\eqnarrayafterskip 0mm
+
+\def\eqnarray{
+\vspace*{\eqnarraybeforeskip}
+\@eqnarraytemp
+}
+
+\def\endeqnarray{
+\@endeqnarraytemp
+\vspace*{\eqnarrayafterskip}
+}
+
+\@namedef{align*}{\vspace*{0mm}\start@align\@ne\st@rredtrue\m@ne}
+\expandafter\def\csname endalign*\endcsname{\endalign}
+
+\def\bibitem{
+\vspace*{-1mm}\@ifnextchar[\@lbibitem\@bibitem}
+
+\def\thebibliography#1{\section*{\refname\@mkboth{\refname}{\refname}}%
+\vspace*{1.5mm}
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+
+\def\endthebibliography{\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}}%
+
+% 見出し用のコマンド
+\def\underitem#1{%
+\vspace*{1pt}%
+\hspace{-5mm}{\bf \underline{#1}}\par%
+\vspace*{1pt}%
+}
+
+% Comment
+\typeout{}
+\typeout{--- tani_resume.sty ～谷研究室卒業研究報告書用スタイルファイル～}
+\typeout{}
+
+
+
