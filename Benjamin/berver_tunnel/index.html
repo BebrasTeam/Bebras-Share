@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>ビーバートンネル</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "<img src='2013_jp_02_choice_a.png'  width='100'>",
+            "<img src='2013_jp_02_choice_b.png'  width='100'>",
+            "<img src='2013_jp_02_choice_c.png'  width='100'>",
+            "<img src='2013_jp_02_choice_d.png'  width='100'>"
+            ], "added", "#answers_berver_tunnel");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/Benjamin/rotation/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["3"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>ビーバートンネル</h1>
+
+<p>ビーバーランドには，２種類のトンネルがあります．</p>
+<p>黒いトンネルは，入ったビーバーが逆（ぎゃく）の順番で出てきます。<br />
+白いトンネルは，先頭のビーバーが最後に，最後のビーバーが先頭になって出てきます。</p>
+
+<p align="middle"><img src="2013_jp_02_fig1.png"></p>
+
+<p>ビーバーの親子が，下の図のような黒白黒のトンネルに入りました。</p>
+
+<p align="middle"><img src="2013_jp_02_fig2.png"></p>
+<b>トンネルから出てくると，どの順番になっているしょうか？</b>
+
+<div class="reponses" id="answers_berver_tunnel">
+</div>
+
+
+</div> <!-- 問題終わり -->
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+  正解は<p align="middle"><img src="2013_jp_02_choice_c.png"></p>
+</p>
+<h2>解説</h2>
+<p>
+最初の黒いトンネルを抜けると<p align="middle"><img src="ton1.png"></p>
+次の白いトンネルを通ると<p align="middle"><img src="ton2.png"></p>
+最後の黒いトンネルを通ると<p align="middle"><img src="ton3.png"></p>
+このような順番になります。
+
+
+</p>
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

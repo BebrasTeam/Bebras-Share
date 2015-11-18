@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>三回転とびら/title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "A",
+            "B",
+            "C",
+            "D"
+            ], "added", "#answers_spin_door");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/Benjamin/spin_door/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["2"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>回転とびら</h1>
+
+
+<p>回転とびらは，パイプの中を上から落ちてきたボールの行き先を右のパイプか左のパイプに振分け（ふりわけ）ます。回転とびらは，ボールを「右に落とす」ときとボールを「左に落とす」ときがあり，それら２つの場合はボールを落とすたびに交互（こうご）に変わります。例えば，下の図では，ボールが落ちる前の場合は「左に落とす」で，ボールが落ちた後の場合は「右に落とす」に変わります。</p>
+<p align="middle"><img src="tobira1.png"></p>
+<p>ビ太郎は，この回転とびらを使って次のようなしかけを作りました。</p>
+<p align="middle"><img src="tobira2.png"></p>
+<b>3番目の黄色いボールは、どこから出てきますか？</b>
+
+<div class="reponses" id="answers_spin_door">
+</div>
+
+
+</div> <!-- 問題終わり -->
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+  正解は「Ｂ」
+</p>
+
+<h2>解説</h2>
+<p>
+  赤・青・黄のボールが，それぞれの回転とびらで，どちら側のパイプに落ちるかを順に考えていきます。
+  最初(上)にある回転とびらでは，赤は左，次の青は右，次の黄色は左に落ちます。左側には赤と黄色，右側には青のボールが落ちます。
+  黄色のボールは，左側のパイプに落ちますので，左側(Ａ,Ｂ側)の回転とびらで考えます。
+  つ目(下)にある左側(Ａ,Ｂ側)の回転とびらでは，赤はＡ，次の黄色はＢへ落ちます。
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>自転車</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "<img src='at10_2-1.png'  width='100'>",
+            "<img src='at10_2-2.png'  width='100'>",
+            "<img src='at10_2-3.png'  width='100'>",
+            "<img src='at10_2-4.png'  width='100'>"
+            ], "added", "#answers_bike");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/Benjamin/bike/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["2"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>自転車</h1>
+
+<p>ビーバータウンでは、カラフルでおしゃれな自転車が人気です。ただし、組み合わせられる部品は決められています。
+
+部品の組み合わせは、下の図のように、いちばん上の車輪から矢印をたどりながら選んでいきます。最初は車体の色を選び、次にハンドルの棒（ぼう）の色を選び、最後にイスの色を選びます。
+部品には1から10の番号が付けられています。</p>
+
+<p align="middle"><img src="at10_1.png"></p>
+
+<b>上の図から作ることができない自転車はどれでしょう。</b>
+
+<div class="reponses" id="answers_bike">
+</div>
+
+
+</div> <!-- 問題終わり -->
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+  正解は「B」
+  <p align="middle"><img src="at10_1.png"></p>
+  A)<p align="middle"><img src="at10_2-1.png"></p> B)<p align="middle"><img src="at10_2-2.png"></p>
+  C)<p align="middle"><img src="at10_2-3.png"></p> D)<p align="middle"><img src="at10_2-4.png"></p>
+</p>
+<p>図の一番上の車輪から順に下に伸（の）びる線を当てはまるものがあるかを見ていきます。<br>
+Aの組合せは1-3-6とたどれば作ることができます。<br>
+Bの組合せは1-4まではたどれますが、サドル(6)が8,9のどちらでもないないので作ることができません。<br>
+Cの組合せは1-4-9とたどれば作ることができます。<br>
+Dの組合せは2-4-8とたどれば作ることができます。<br>
+なお、作ることができる組み合わせは次の7通りです。<br>
+1-3-6<br>
+1-3-7<br>
+1-4-8<br>
+1-4-9<br>
+2-5-9<br>
+2-5-10<br>
+2-4-8</p>
+
+<h2>解説</h2>
+
+<p>部品の組合せが描かれた、枝分かれしていく図は「木構造」と呼ばれます。<br>
+木構造はこの問題のように可能性のある組合せを示したり、情報の階層構造を示すためなどに用いられます。</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>
