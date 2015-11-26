@@ -1,0 +1,29 @@
+【翻訳が必要な箇所】
+・コンテスト開始時のアクセスコード
+contestInterface/index.php 
+155: Code d’accès
+
+・コンテスト開始時のアラート
+contestInterface/common.js
+560: alert("C'est parti ! Notez votre score en haut à gauche qui se met à jour au fur et à mesure de vos réponses !”);
+
+・コンテスト中のリロードアラート
+contestInterface/common.js
+405: Désolé, il est impossible de recharger…
+
+・コンテスト中、終了せずにリロードしたあとのアラート
+contestInterface/common.js
+1464: if (!confirm("Voulez-vous reprendre l'épreuve commencée ?”)
+
+・コンテスト中のTemps,Score
+contestInterface/index.php 
+169,170
+
+・問題のリセットボタン
+modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js
+796: value=“Recommencer”
+739,751,763 value=“Valider”
+
+・回答時のメッセージ
+modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js:
+628: getFullFeedbackSavedMessage: function(taskMode)
