@@ -7,6 +7,12 @@ contestInterface/index.php
 contestInterface/common.js
 560: alert("C'est parti ! Notez votre score en haut à gauche qui se met à jour au fur et à mesure de vos réponses !”);
 
+・コンテストコード入力時のエラー
+contestInterface/common_contest.php
+6,20 Mot de passe invalide
+contestInterface/data.php
+117,287 Mot de passe invalide
+
 ・コンテスト中のリロードアラート
 contestInterface/common.js
 405: Désolé, il est impossible de recharger…

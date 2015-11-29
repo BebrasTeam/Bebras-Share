@@ -1,0 +1,205 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>2015-SK-04-JP</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "赤",
+            "緑",
+            "白",
+            "マゼンダ"
+            ], "added", "#answers_2015-SK-04-JP");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/2015-SK-04-JP/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["4"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>スポットライト</h1>
+<p>
+ビ太郎は，文化祭の演劇でスポットライトの係になりました。ビ太郎の学校には赤，緑，青の3色のスポットライトがあり，それらを組み合わせるといろいろな色のスポットライトを作ることができます。以下の表は，各色のスポットライトのON / OFFで作ることができる色を示しています。</p>
+<center>
+    <table style="border: 2px #000000 solid;">
+        <tbody>
+            <tr>
+                <td style="border: 2px #000000 solid;">
+                    <p style="text-align: center;"><span style="font-weight: 400;">赤</span></p>
+                </td>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">緑</span></p>
+                </td>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">青</span></p>
+                </td>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">できる色</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">赤</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">緑</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">青</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">黄</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">マゼンダ</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">シアン</span></p>
+                </td>
+            </tr>
+            <tr style="text-align: center;">
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">ON</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p><span style="font-weight: 400;">白</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px solid #000000; text-align: center;">
+                    <p><span style="font-weight: 400;">OFF</span></p>
+                </td>
+                <td style="border: 2px #000000 solid;">
+                    <p style="text-align: center;"><span style="font-weight: 400;">黒</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center><p>&nbsp;ビ太郎は３色のスポットライトを次のようなルールでON / OFFすることにしました。</p>
+<ul>
+    <li>赤は60秒間OFFにして，60秒間ONにすることを繰り返す</li>
+    <li>緑は30秒間OFFにして，30秒間ONにすることを繰り返す</li>
+    <li>青は120秒間ONにして，120秒間OFFにすることを繰り返す</li>
+</ul>
+<p><strong>60秒目から90秒目の間，スポットライトで作られた色はどれでしょう。</strong></p><div class="reponses" id="answers_2015-SK-04-JP">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+  正解は「マゼンダ」
+</p>
+
+<h2>解説</h2>
+<p>それぞれのスポットライトのON/OFFを30秒間ずつ考えると,
+<br>赤　0~30秒目　OFF 30~60秒目  OFF  60~90秒目  ON
+<br>緑　0~30秒目  OFF 30~60秒目  ON   60~90秒目  OFF
+<br>青　0~30秒目  ON  30~60秒目  ON   60~90秒目  ON
+<br>なので、60~90秒目には赤と青のスポットライトがONになってるので、"マゼンダ"の色ができます。
+</p>
+   
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>
