@@ -1,8 +1,9 @@
+<!-- "__"を設定!! -->
 <!doctype html>
 <html>
    <head>
       <meta charset="utf-8">
-      <title>2015-FR-02-JP</title>
+      <title>2015-HU-02-JP</title>
     <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
     <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
@@ -14,56 +15,44 @@
     <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
     <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
       <script class="task" type="text/javascript">
-         stdAnsTypes.genTaskFreeInput("integer", "#answers_2015-FR-02-JP", 2, 1); //answers_以降をフォルダ名に変更 
-                                                                                   // integerは数値,stringは文字列 
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "マット，三角ナプキン，コーヒーカップとコーヒーのお皿，ナイフ，大きなお皿",
+            "マット，三角ナプキン，コーヒーカップとコーヒーのお皿，大きなお皿，ナイフ",
+            "マット，コーヒーカップとコーヒーのお皿，三角ナプキン，大きなお皿，ナイフ",
+            "三角ナプキン，ナイフ，マット，コーヒーカップとコーヒーのお皿，大きなお皿"
+            ], "added", "#answers_2015-HU-02-JP");
       </script>
 
       <script class="remove" type="text/javascript">var json = {
-    "id": "http://castor-informatique.fr/tasks/2015/2015-FR-02-JP/",  //id (一応変更)
+    "id": "http://castor-informatique.fr/tasks/2015/2015-HU-02-JP/",
     "language": "fr",
     "version": "fr.01",
     "authors": "",
-    "translators": [
-
-    ],
+    "translators": [],
     "license": "",
     "taskPathPrefix": "",
     "modulesPathPrefix": "",
-    "browserSupport": [
-
-    ],
-    "acceptedAnswers": [    //答え
-        "8"
-    ]
+    "browserSupport": [],
+    "acceptedAnswers": ["3"]
 };</script>
    </head>
    <body>
-      <div id="task">
-<h1>秘密を伝えよう</h1>
-<p>ビーバーはうわさ話が好きで，秘密（ひみつ）を聞くと次の日にはそれをすぐに他のビーバーに伝え（つたえ）ます。</p>
-<p>次の図のようなマスがならんでいるとき，それぞれのマスにビーバーは１ぴきずついます。</p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="2015_fr_02_jp_1.png" alt="2015-FR-02-JP-1" /></p>
-<p>秘密（ひみつ）を聞いたビーバーは次の日にはとなりのマスのビーバーにその秘密（ひみつ）を伝え（つたえ）ます。たとえば，次の図のようにビーバがいるときに，赤いマスのビーバーに秘密（ひみつ）を伝えると，次の日には黄色いマスのビーバーに秘密（ひみつ）が伝わり（つたわり）ます。</p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="2015_fr_02_jp_2.png" alt="2015-FR-02-JP-2" /></p>
-<p><strong>次の図のようなマスにビーバーがいるとき，できるだけ少ないビーバーにだけ秘密（ひみつ）を伝え（つたえ），次の日にすべてのビーバーが秘密（ひみつ）を知っているようにするためには，何びきのビーバーに秘密（ひみつ）を伝え（つたえ）ればよいかしょうか．</strong><br /><strong>その数を入力して「保存」（ほぞん）をクリックしよう．</strong></p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="2015_fr_02_jp_3.png" alt="2015-FR-02-JP-3" /></p>
+      <div id="task"> <!-- 問題内容 -->
+<h1>朝食の準備</h1>
+<p>ビ太郎（ビたろう）は朝食のために食器（しょっき）をテーブルの上に用意しました。</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="2015_hu_02_fig.png" alt="2015-HU-02-fig" width="320" height="251" /></p>
+<p><strong>上の絵のようになるには，どのような順番（じゅんばん）で食器（しょっき）をテーブルにおけばよいでしょうか？</strong></p>
 
-
-<div class="reponses" id="answers_2015-FR-02-JP"> <!-- answers_以降を変更-->
+<div class="reponses" id="answers_2015-HU-02-JP">
 </div>
 
+</div> <!-- 問題終わり -->
 
 
-</div><!-- task -->
-      <div id="solution">
-<!-- réponse : 3
-   -->
-
-<div class="explications">
-
+      <div id="solution"> <!-- 解答内容 -->
 <h2>解答</h2>
 <p>
-  正解は「8」
+正解は「マット，コーヒーカップとコーヒーのお皿，三角ナプキン，大きなお皿，ナイフ」
 </p>
 
 <h2>解説</h2>
@@ -72,7 +61,7 @@
 </p>
 
 
-</div>
-</div> <!-- task-solution -->
+
+</div> <!-- 解答終わり -->
    </body>
 </html>
