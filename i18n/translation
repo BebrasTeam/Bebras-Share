@@ -56,8 +56,13 @@ modules/integrationAPI.01/official/miniPlatform.js: 「翻訳済み」
 【編集ファイル】
 contestInterface/
 index.php
-style.css
-common.js
-1184 document.getElementById('b-box').style.display='none'
-1420  document.getElementById(\"b-box\").style.display=\"none\”'
 
+style.css
+56 intro
+
+common.js
+38 clear_view()関数追加
+1191 clear_view();
+1223 clear_view();
+1471 clear_view();
+1427 document.getElementById('b-box').style.display='none';
