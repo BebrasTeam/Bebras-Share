@@ -21,6 +21,11 @@ contestInterface/common.js
 contestInterface/common.js
 1464: if (!confirm("Voulez-vous reprendre l'épreuve commencée ?”)
 
+・コンテスト中のロードエラー時
+contestInterface/common.js
+597 'Il s\'est produit une anomalie lors du téléchargement du contenu du concours. Veuillez tenter de recharger la page avec Ctrl+R ou Ctrl+F5. Si cela ne fonctionne pas, essayez éventuellement avec un autre navigateur. En cas d\'échec répété, merci de contacter la hotline, pour que nous puissions rechercher la cause de ce problème.'
+
+
 ・コンテスト中のTemps,Score
 contestInterface/index.php 
 169,170
