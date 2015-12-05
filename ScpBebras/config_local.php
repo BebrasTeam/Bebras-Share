@@ -33,18 +33,18 @@ $config->defaultLanguage = 'ja';
 $config->teacherInterface->countryCode = 'FR';
 
 // Teacher interface settings
-$config->teacherInterface->sCoordinatorFolder = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/teacherInterface';
-$config->teacherInterface->sAssetsStaticPath = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/contestInterface';
-$config->teacherInterface->sAbsoluteStaticPath = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/contestInterface';
-$config->teacherInterface->sAbsoluteStaticPathOldIE = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/contestInterface';
+$config->teacherInterface->sCoordinatorFolder = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/teacherInterface';
+$config->teacherInterface->sAssetsStaticPath = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/contestInterface';
+$config->teacherInterface->sAbsoluteStaticPath = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/contestInterface';
+$config->teacherInterface->sAbsoluteStaticPathOldIE = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/contestInterface';
 $config->teacherInterface->genericPasswordMd5 = ''; //
 $config->teacherInterface->generationMode = 'local';
 $config->teacherInterface->sContestGenerationPath = '/../contestInterface/contests/';
 $config->teacherInterface->forceOfficialEmailDomain = false;
 
 // URLs
-$config->teacherInterface->baseUrl = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/teacherInterface';
-$config->contestInterface->baseUrl = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebras-test/bebras-platform/contestInterface';
+$config->teacherInterface->baseUrl = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/teacherInterface';
+$config->contestInterface->baseUrl = 'http://da.tani.cs.chs.nihon-u.ac.jp/bebrasc/bebras-platform/contestInterface';
 $config->certificates->webServiceUrl = 'http://castor-informatique.fr.localhost/certificates/';
 $config->contestPresentationURL = 'http://castor-informatique.fr';
 $config->contestOfficialURL = 'http://concours.castor-informatique.fr';

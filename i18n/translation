@@ -1,40 +1,68 @@
 【翻訳が必要な箇所】
-・コンテスト開始時のアクセスコード
+・コンテスト開始時のアクセスコード「翻訳済み」
 contestInterface/index.php 
 155: Code d’accès
 
-・コンテスト開始時のアラート
+・コンテスト開始時のアラート 「コメントアウト」
 contestInterface/common.js
 560: alert("C'est parti ! Notez votre score en haut à gauche qui se met à jour au fur et à mesure de vos réponses !”);
 
-・コンテストコード入力時のエラー
+
+・コンテストコード入力時のエラー 「翻訳済み」
 contestInterface/common_contest.php
 6,20 Mot de passe invalide
 contestInterface/data.php
 117,287 Mot de passe invalide
 
-・コンテスト中のリロードアラート
+・コンテスト終了後のリロードアラート 「翻訳済み」
 contestInterface/common.js
 405: Désolé, il est impossible de recharger…
 
-・コンテスト中、終了せずにリロードしたあとのアラート
+・コンテスト中、終了せずにリロードしたあとのアラート 「翻訳済み」
 contestInterface/common.js
 1464: if (!confirm("Voulez-vous reprendre l'épreuve commencée ?”)
 
-・コンテスト中のロードエラー時
+・コンテスト中のロードエラー時 「翻訳済み」
 contestInterface/common.js
 597 'Il s\'est produit une anomalie lors du téléchargement du contenu du concours. Veuillez tenter de recharger la page avec Ctrl+R ou Ctrl+F5. Si cela ne fonctionne pas, essayez éventuellement avec un autre navigateur. En cas d\'échec répété, merci de contacter la hotline, pour que nous puissions rechercher la cause de ce problème.'
 
 
-・コンテスト中のTemps,Score
+・コンテスト中のTemps,Score 「翻訳済み」
 contestInterface/index.php 
-169,170
+208,209
 
-・問題のリセットボタン
+・問題のボタン 「翻訳済み」
 modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js
 796: value=“Recommencer”
 739,751,763 value=“Valider”
 
+modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js: 「翻訳済み」
+24
+220: Votre réponse : 
+
 ・回答時のメッセージ
-modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js:
-628: getFullFeedbackSavedMessage: function(taskMode)
+modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js: 
+634,636,640: Votre score est maintenant　「コメントアウト」
+
+628: getFullFeedbackSavedMessage: function(taskMode) 「翻訳済み」
+657: Rechargez la réponse validée
+
+modules/integrationAPI.01/official/miniPlatform.js: 「翻訳済み」
+52 >Vous pouvez maintenant lire la solution en bas de la page
+89 Voir la solution
+182 task,solution
+
+
+【編集ファイル】
+contestInterface/
+index.php
+235
+style.css
+56 intro
+
+common.js
+38 clear_view()関数追加
+1191 clear_view();
+1223 clear_view();
+1471 clear_view();
+1427 document.getElementById('b-box').style.display='none';
