@@ -219,6 +219,7 @@
       <div style="text-align:center;width:180px;">
          <button type="button" id="buttonClose" class="buttonClose" style="display:none;" data-i18n="questions_finish_early" onclick='tryCloseContest()'></button>
       </div>
+
       <table class="questionsTable">
          <tr><td>
             <div id="divQuestionParams">
@@ -230,6 +231,10 @@
             </div>
          </td></tr>
       </table>
+
+       </br>
+       <FORM><INPUT type="button" value="TOPページへ" onClick="history.go(0)" style="border-style:solid; border-width:1px; border-color:#3366FF; background:#FFFFFF; font-size:12pt; color:#3366FF"></FORM>
+
    </div>
    <div class="newInterface" style="padding-bottom:1em">
       <div class="header">
