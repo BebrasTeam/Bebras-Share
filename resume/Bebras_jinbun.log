@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.12)  25 NOV 2015 16:33
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.12)  5 DEC 2015 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -295,380 +295,72 @@ Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
 \@bcal=\count144
 \shaderule=\dimen155
 ))
-(./Bebras_jinbun.aux
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-)
+(./Bebras_jinbun.aux)
 \openout1 = `Bebras_jinbun.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 35.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 37.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 35.
-File: img/bebras-test-form.png Graphic file (type eps)
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
 
-<img/bebras-test-form.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [27
-
-]
-
-LaTeX Warning: File `img/bee_rect.png' not found on input line 71.
-
-File: img/bee_rect.png Graphic file (type eps)
-<img/bee_rect.png>
-
-LaTeX Warning: File `img/bee_triangle.png' not found on input line 72.
-
-File: img/bee_triangle.png Graphic file (type eps)
-<img/bee_triangle.png>
-
-LaTeX Warning: File `img/bee_go.png' not found on input line 73.
-
-File: img/bee_go.png Graphic file (type eps)
-<img/bee_go.png>
-
-LaTeX Warning: File `img/bee_turn.png' not found on input line 74.
-
-File: img/bee_turn.png Graphic file (type eps)
-<img/bee_turn.png>
-
-LaTeX Warning: File `img/bee_example.png' not found on input line 78.
-
-File: img/bee_example.png Graphic file (type eps)
-<img/bee_example.png>
-
-LaTeX Warning: File `img/bee_problem.png' not found on input line 82.
-
-File: img/bee_problem.png Graphic file (type eps)
-<img/bee_problem.png>
-
-LaTeX Warning: File `img/3_1_1.png' not found on input line 98.
-
-File: img/3_1_1.png Graphic file (type eps)
-<img/3_1_1.png>
-
-LaTeX Warning: File `img/3_1_2.png' not found on input line 104.
-
-File: img/3_1_2.png Graphic file (type eps)
-<img/3_1_2.png>
-
-LaTeX Warning: File `img/3_1_3.png' not found on input line 110.
-
-File: img/3_1_3.png Graphic file (type eps)
-<img/3_1_3.png>
-
-LaTeX Warning: File `img/3_1_4.png' not found on input line 116.
-
-File: img/3_1_4.png Graphic file (type eps)
-<img/3_1_4.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [28]
-
-LaTeX Warning: File `img/soroban_example.png' not found on input line 127.
-
-File: img/soroban_example.png Graphic file (type eps)
-<img/soroban_example.png>
-
-LaTeX Warning: File `img/soroban_problem.png' not found on input line 131.
-
-File: img/soroban_problem.png Graphic file (type eps)
-<img/soroban_problem.png>
-
-LaTeX Warning: File `img/3_2_1.png' not found on input line 141.
-
-File: img/3_2_1.png Graphic file (type eps)
-<img/3_2_1.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [29]
-
-LaTeX Warning: File `img/3_2_2.png' not found on input line 149.
-
-File: img/3_2_2.png Graphic file (type eps)
-<img/3_2_2.png>
-
-LaTeX Warning: File `img/3_2_3.png' not found on input line 157.
-
-File: img/3_2_3.png Graphic file (type eps)
-<img/3_2_3.png>
-
-LaTeX Warning: File `img/3_2_4.png' not found on input line 165.
-
-File: img/3_2_4.png Graphic file (type eps)
-<img/3_2_4.png>
-
-LaTeX Warning: File `img/3_2_5.png' not found on input line 173.
-
-File: img/3_2_5.png Graphic file (type eps)
-<img/3_2_5.png>
-
-LaTeX Warning: File `img/3_2_6.png' not found on input line 181.
-
-File: img/3_2_6.png Graphic file (type eps)
-<img/3_2_6.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [30]
-
-LaTeX Warning: File `img/3_2_7.png' not found on input line 189.
-
-File: img/3_2_7.png Graphic file (type eps)
-<img/3_2_7.png>
-
-LaTeX Warning: File `img/river_map.png' not found on input line 200.
-
-File: img/river_map.png Graphic file (type eps)
-<img/river_map.png>
-
-LaTeX Warning: File `img/river_green.png' not found on input line 206.
-
-File: img/river_green.png Graphic file (type eps)
-<img/river_green.png>
-
-LaTeX Warning: File `img/river_stone.png' not found on input line 207.
-
-File: img/river_stone.png Graphic file (type eps)
-<img/river_stone.png>
-
-LaTeX Warning: File `img/river_wood.png' not found on input line 208.
-
-File: img/river_wood.png Graphic file (type eps)
-<img/river_wood.png>
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-\JY1/mc/m/n/7 引用元 ： 川上り\OT1/cmr/m/n/7 .  \JY1/mc/m/n/7 「 ビ ーバ ーコン
-テスト 」 情報ペ ージ\OT1/cmr/m/n/7 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-\OT1/cmr/m/n/7 http://bebras.eplang.jp/index.php?2014-\JY1/mc/m/n/7 川上り\OT1/
-cmr/m/n/7 , (\JY1/mc/m/n/7 参照
- []
-
-
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [31]
-
-LaTeX Warning: File `img/3_3_1.png' not found on input line 232.
-
-File: img/3_3_1.png Graphic file (type eps)
-<img/3_3_1.png>
-
-LaTeX Warning: File `img/3_3_2.png' not found on input line 240.
-
-File: img/3_3_2.png Graphic file (type eps)
-<img/3_3_2.png>
-
-LaTeX Warning: File `img/3_3_3.png' not found on input line 248.
-
-File: img/3_3_3.png Graphic file (type eps)
-<img/3_3_3.png>
-
-LaTeX Warning: File `img/3_3_4.png' not found on input line 256.
-
-File: img/3_3_4.png Graphic file (type eps)
-<img/3_3_4.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [32]
-
-LaTeX Warning: File `img/3_3_5.png' not found on input line 264.
-
-File: img/3_3_5.png Graphic file (type eps)
-<img/3_3_5.png>
-
-LaTeX Warning: File `img/3_3_6.png' not found on input line 272.
-
-File: img/3_3_6.png Graphic file (type eps)
-<img/3_3_6.png>
-
-LaTeX Warning: File `img/speaker_example.png' not found on input line 282.
-
-File: img/speaker_example.png Graphic file (type eps)
-<img/speaker_example.png>
-
-LaTeX Warning: File `img/speaker_problem.png' not found on input line 286.
-
-File: img/speaker_problem.png Graphic file (type eps)
-<img/speaker_problem.png>
-
-LaTeX Warning: File `img/3_4_1.png' not found on input line 313.
-
-File: img/3_4_1.png Graphic file (type eps)
-<img/3_4_1.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [33]
-
-LaTeX Warning: File `img/3_4_2.png' not found on input line 321.
-
-File: img/3_4_2.png Graphic file (type eps)
-<img/3_4_2.png>
-
-LaTeX Warning: File `img/3_4_3.png' not found on input line 329.
-
-File: img/3_4_3.png Graphic file (type eps)
-<img/3_4_3.png>
-
-LaTeX Warning: File `img/3_4_4.png' not found on input line 337.
-
-File: img/3_4_4.png Graphic file (type eps)
-<img/3_4_4.png>
-
-LaTeX Warning: File `img/3_4_5.png' not found on input line 345.
-
-File: img/3_4_5.png Graphic file (type eps)
-<img/3_4_5.png>
-
-LaTeX Warning: File `img/3_4_6.png' not found on input line 353.
-
-File: img/3_4_6.png Graphic file (type eps)
-<img/3_4_6.png>
-
-LaTeX Warning: File `img/bracelet_answer.png' not found on input line 366.
-
-File: img/bracelet_answer.png Graphic file (type eps)
-<img/bracelet_answer.png>
-
-LaTeX Warning: File `img/bracelet_select1.png' not found on input line 373.
-
-File: img/bracelet_select1.png Graphic file (type eps)
-<img/bracelet_select1.png>
-
-LaTeX Warning: File `img/bracelet_select2.png' not found on input line 374.
-
-File: img/bracelet_select2.png Graphic file (type eps)
-<img/bracelet_select2.png>
-
-LaTeX Warning: File `img/bracelet_select3.png' not found on input line 375.
-
-File: img/bracelet_select3.png Graphic file (type eps)
-<img/bracelet_select3.png>
-
-LaTeX Warning: File `img/bracelet_select4.png' not found on input line 376.
-
-File: img/bracelet_select4.png Graphic file (type eps)
-<img/bracelet_select4.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [34]
-
-LaTeX Warning: File `img/dam_problem.png' not found on input line 394.
-
-File: img/dam_problem.png Graphic file (type eps)
-<img/dam_problem.png>
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
-\JY1/mc/m/n/7 引用元 ： ダム\OT1/cmr/m/n/7 .  \JY1/mc/m/n/7 「 ビ ーバ ーコンテ
-スト 」 情報ペ ージ\OT1/cmr/m/n/7 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--406
-\OT1/cmr/m/n/7 http://bebras.eplang.jp/index.php?2014-\JY1/mc/m/n/7 ダム\OT1/cm
-r/m/n/7 , (\JY1/mc/m/n/7 参照 \OT1/cmr/m/n/7 2014-
- []
-
-
-LaTeX Warning: File `img/4_2_1.png' not found on input line 427.
-
-File: img/4_2_1.png Graphic file (type eps)
-<img/4_2_1.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [35]
-
-LaTeX Warning: File `img/4_2_2.png' not found on input line 435.
-
-File: img/4_2_2.png Graphic file (type eps)
-<img/4_2_2.png>
-
-LaTeX Warning: File `img/4_2_3.png' not found on input line 443.
-
-File: img/4_2_3.png Graphic file (type eps)
-<img/4_2_3.png>
-
-LaTeX Warning: File `img/4_2_4.png' not found on input line 451.
-
-File: img/4_2_4.png Graphic file (type eps)
-<img/4_2_4.png>
-
-LaTeX Warning: File `img/4_2_5.png' not found on input line 459.
-
-File: img/4_2_5.png Graphic file (type eps)
-<img/4_2_5.png>
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
- [36]
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 []\JY1/mc/m/n/10 谷 聖一\OT1/cmr/m/n/10 , \JY1/mc/m/n/10 兼宗 進\OT1/cmr/m/n/10
  , \JY1/mc/m/n/10 井戸坂 幸男\OT1/cmr/m/n/10 . \JY1/mc/m/n/10 小中高生向け国際
 情報科学コンテスト \OT1/cmr/m/n/10 Be-bras.
  []
 
 
-Overfull \hbox (18.58911pt too wide) in paragraph at lines 484--485
-[] \JY1/mc/m/n/10 「 ビ ーバ ーコンテスト 」 情報ペ ージ　ベンジ ャ ミン問題解
-説\OT1/cmr/m/n/10 . http://bebras.eplang.jp/index.php?BenjaminAnswer2014
- []
-
-
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
- [37]
-(./Bebras_jinbun.aux)
+ [1
 
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+]
+(./Bebras_jinbun.aux) ) 
 Here is how much of TeX's memory you used:
- 2483 strings out of 493777
- 32043 string characters out of 6151334
- 102358 words of memory out of 5000000
- 5884 multiletter control sequences out of 15000+600000
+ 2346 strings out of 493777
+ 30290 string characters out of 6151334
+ 100358 words of memory out of 5000000
+ 5798 multiletter control sequences out of 15000+600000
  13294 words of font info for 55 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 42i,11n,42p,636b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,42p,603b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bebras_jinbun.dvi (11 pages, 36576 bytes).
+Output written on Bebras_jinbun.dvi (1 page, 4972 bytes).
