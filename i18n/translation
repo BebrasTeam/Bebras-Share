@@ -66,3 +66,4 @@ common.js
 1223 clear_view();
 1471 clear_view();
 1427 document.getElementById('b-box').style.display='none';
+1418 castor 2015の変更
