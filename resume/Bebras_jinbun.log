@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.8.7)  8 DEC 2015 16:52
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.8.7)  8 DEC 2015 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,21 +340,27 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 36.
-File: img/bebras_top.jpg Graphic file (type eps)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
 
-<img/bebras_top.jpg>
-Overfull \hbox (4.58475pt too wide) in paragraph at lines 60--61
- [] 
- []
-
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [1
 
 ]
-File: img/contest_access.jpg Graphic file (type eps)
+File: img/bebras_top.jpg Graphic file (type eps)
 
+<img/bebras_top.jpg>
+Overfull \hbox (4.58475pt too wide) in paragraph at lines 100--101
+ [] 
+ []
+
+File: img/contest_access.jpg Graphic file (type eps)
 <img/contest_access.jpg>
 File: img/past_contest_1.jpg Graphic file (type eps)
  <img/past_contest_1.jpg>
@@ -363,16 +369,16 @@ File: img/past_contest_2.jpg Graphic file (type eps)
 File: img/new_contest_start.jpg Graphic file (type eps)
 
 <img/new_contest_start.jpg>
-File: img/new_contest_1.jpg Graphic file (type eps)
- <img/new_contest_1.jpg>
-File: img/contest_end.jpg Graphic file (type eps)
- <img/contest_end.jpg>
-File: img/contest_result.jpg Graphic file (type eps)
-
-<img/contest_result.jpg>
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [2]
+File: img/new_contest_1.jpg Graphic file (type eps)
+
+<img/new_contest_1.jpg>
+File: img/contest_end.jpg Graphic file (type eps)
+ <img/contest_end.jpg>
+File: img/contest_result.jpg Graphic file (type eps)
+ <img/contest_result.jpg>
 File: img/new_contest_2.jpg Graphic file (type eps)
 
 <img/new_contest_2.jpg>
@@ -383,7 +389,10 @@ File: img/create_contest_1.jpg Graphic file (type eps)
 File: img/create_contest_2.jpg Graphic file (type eps)
 
 <img/create_contest_2.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Overfull \vbox (3.0pt too high) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 []\JY1/mc/m/n/10 谷 聖一\OT1/cmr/m/n/10 , \JY1/mc/m/n/10 兼宗 進\OT1/cmr/m/n/10
  , \JY1/mc/m/n/10 井戸坂 幸男\OT1/cmr/m/n/10 . \JY1/mc/m/n/10 小中高生向け国際
 情報科学コンテスト \OT1/cmr/m/n/10 Be-bras.
@@ -392,18 +401,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
- [3]
-Overfull \vbox (3.0pt too high) has occurred while \output is active []
-
  [4]
 (./Bebras_jinbun.aux) ) 
 Here is how much of TeX's memory you used:
- 2386 strings out of 493777
- 30878 string characters out of 6151335
+ 2404 strings out of 493777
+ 31204 string characters out of 6151335
  101358 words of memory out of 5000000
- 5824 multiletter control sequences out of 15000+600000
+ 5839 multiletter control sequences out of 15000+600000
  13294 words of font info for 55 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 42i,10n,42p,603b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,42p,603b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bebras_jinbun.dvi (4 pages, 15764 bytes).
+Output written on Bebras_jinbun.dvi (4 pages, 17288 bytes).
