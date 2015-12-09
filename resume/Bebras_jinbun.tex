@@ -51,19 +51,20 @@
 
 \subsection{用語説明}
 \begin{description}
-\item[Git] aaa
+\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．(詳細は\cite{git}参照)
 \end{description}
 
 \begin{description}
-\item[Bower]
+\item[Bower]Twitter社によるフロントエンド用パッケージ管理ツールである．(詳細は\cite{bower}参照)
 \end{description}
 
 \begin{description}
-\item[Composer]
+\item[Composer] PHPの依存関係管理ツールである．．(詳細は\cite{composer}参照)
+
 \end{description}
 
 \begin{description}
-\item[DBV] 
+\item[DBV]  Webページ上でデータベース管理を行うためのツールである．(詳細は\cite{dbv}参照)
 \end{description}
 
 \begin{description}
@@ -81,10 +82,11 @@
 \section{試作手順}
 本演習では，事後学習として過去に行われたビーバーコンテストにチャレンジできるWebページを試作した．報告者は，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を元に開発を進めた．本章では，報告者が試作した手順を記す．
 \subsection{オープンソースのインストール}
-Gitを用いて，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を
+Gitを用いて，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を入手した．
 \subsection{パッケージのインストール}
-
+試作するサーバーシステムにはフロントエンドとPHPそれぞれのパッケージを導入する必要がある．本演習では，フロントエンド用にbower，PHP用にcomposerを使用した．
 \subsection{データベース構築}
+dbvを用いることで，Web上
 
 \subsection{翻訳}
 \section{ビーバーコンテストページの試作}
@@ -239,6 +241,11 @@ Gitを用いて，フランスのグループがGithubに公開しているサ�
 \bibitem{bebras-contest} 「ビーバーコンテスト」情報ページ.  http://bebras.eplang.jp/ , (参照 2015-12-08)
 \bibitem{bebras-pdf} 谷 聖一, 兼宗 進, 井戸坂 幸男. 小中高生向け国際情報科学コンテストBebras.  http://www.ipsj.or.jp/magazine/9faeag0000005al5-att/peta55-11.pdf, (参照 2015-12-08)
 \bibitem{bebras-france-platform} Bebras Platform. https://github.com/France-ioi/bebras-platform
+\bibitem{git} Git  https://ja.wikipedia.org/wiki/Git
+\bibitem{bower}Bower  http://bower.io/
+\bibitem{composer}Composer  https://getcomposer.org/
+\bibitem{dbv}dbv  http://dbv.vizuina.com/
+\bibitem{i18n}i18n  https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%8C%96%E3%81%A8%E5%9C%B0%E5%9F%9F%E5%8C%96
 
 
 
