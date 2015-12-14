@@ -51,15 +51,15 @@
 
 \subsection{用語説明}
 \begin{description}
-\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．(詳細は\cite{git}参照)
+\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．また，Gitを使用してソフトウェア開発プロジェクトのための共有ウェブサービスとしてGIthubがある．(詳細は\cite{git}参照)
 \end{description}
 
 \begin{description}
-\item[Bower]Twitter社によるフロントエンド用パッケージ管理ツールである．(詳細は\cite{bower}参照)
+\item[Bower]Twitter社によるフロントエンド用パッケージ管理ツールである．json形式の設定ファイルを用意することで，記述されたパッケージを一括で取り込むことができる．(詳細は\cite{bower}参照)
 \end{description}
 
 \begin{description}
-\item[Composer] PHPの依存関係管理ツールである．．(詳細は\cite{composer}参照)
+\item[Composer] PHPの依存関係管理ツールである．bowerと同じくjsonから複数のパッケージをインストールすることができる．(詳細は\cite{composer}参照)
 
 \end{description}
 
@@ -68,7 +68,7 @@
 \end{description}
 
 \begin{description}
-\item[i18n] 仮
+\item[i18n] 国際化を意味するinternationalizationを省略した記述法で表したものである．国際化とは「ソフトウェアに技術的な変更を加えることなく多様な言語や地域に適合できるようにする，ソフトウェア設計の工程である」(\cite{i18n})．
 \end{description}
 
 \subsection{試作環境}
@@ -82,13 +82,47 @@
 \section{試作手順}
 本演習では，事後学習として過去に行われたビーバーコンテストにチャレンジできるWebページを試作した．報告者は，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を元に開発を進めた．本章では，報告者が試作した手順を記す．
 \subsection{オープンソースのインストール}
-Gitを用いて，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を入手した．
+Gitを用いて，フランスのグループがGithubに公開しているサーバシステム(\cite{bebras-france-platform})を入手した．しかし，このサーバーシステムはまだ未完全であったこともあり，Github上での更新を確認しつつ進めていく形となった．
+
 \subsection{パッケージのインストール}
-試作するサーバーシステムにはフロントエンドとPHPそれぞれのパッケージを導入する必要がある．本演習では，フロントエンド用にbower，PHP用にcomposerを使用した．
+今回試作するサーバーシステムにはフロントエンドとPHPそれぞれのパッケージを導入する必要があった．本演習では，フロントエンド用にbower，PHP用にcomposerを使用し，それぞれが必要な内容が記述されたjsonファイルを元にパッケージの取り込みを行った．
+
 \subsection{データベース構築}
-dbvを用いることで，Web上
+dbvを用いることで，ブラウザを通してデータベースを作成した．元となるsql文はテーブルごとにフォルダに格納されており，dbvはそのフォルダ内のファイルを一括で実行することができる．
 
 \subsection{翻訳}
+ページの言語には，英語が使われており，そのままでは日本の学生が使うことは困難であるため，翻訳が必要であった．そこで「i18next」というフロントエンドで国際化を可能にするライブラリを用いて翻訳を行った．以下，具体的な使用法の説明をする．HTML内では，data-i18n属性を用い，それぞれ翻訳箇所に任意の文字列を当てる(図\ref{fig:101}参照)．
+
+\begin{figurehere}
+\begin{center}
+\fbox{
+\includegraphics[bb=0 0 706 258,width=7.5cm]{img/i18n_1.jpg}
+}
+\end{center}
+\caption{翻訳時のHTML内の記述}\label{fig:101}
+\end{figurehere}
+
+翻訳箇所に当てられた文字列をリストでまとめているjsonファイルを用いて，翻訳を行う．左側の文字列に対応する翻訳した文字列を右に入力することで(図\ref{fig:102}，図\ref{fig:103}参照)，ページ上には翻訳された文字が表示できるようになる．また言語のフォルダごとにjsonファイルを作り，記述しておくことで容易に国際化が可能となる．
+
+\begin{figurehere}
+\begin{center}
+\fbox{
+\includegraphics[bb=0 0 406 326,width=5.8cm]{img/i18n_ja.jpg}
+}
+\end{center}
+\caption{jsonファイル内の記述(日本語化の場合)}\label{fig:102}
+\end{figurehere}
+
+\begin{figurehere}
+\begin{center}
+\fbox{
+\includegraphics[bb=0 0 460 334,width=6cm]{img/i18n_en.jpg}
+}
+\end{center}
+\caption{jsonファイル内の記述(英語化の場合)}\label{fig:103}
+\end{figurehere}
+
+
 \section{ビーバーコンテストページの試作}
 本項では，報告者が試作した過去のコンテストまたは，新規コンテストを受験することができる「ビーバーコンテストページ」の機能について述べる．
 
