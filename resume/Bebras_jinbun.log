@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.8.7)  15 DEC 2015 11:07
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.12)  22 DEC 2015 19:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,31 +340,50 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 36.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+
+LaTeX Warning: Citation `bebras-contest' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: Citation `bebras-pdf' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: Citation `bebras-france-platform' on page 1 undefined on input l
+ine 101.
+
+
+LaTeX Warning: Citation `bebras-france-platform' on page 1 undefined on input l
+ine 103.
+
 
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [1
 
 ]
-File: img/i18n_1.jpg Graphic file (type eps)
 
+LaTeX Warning: Reference `fig:101' on page 2 undefined on input line 112.
+
+File: img/i18n_1.jpg Graphic file (type eps)
 <img/i18n_1.jpg>
+
+LaTeX Warning: Reference `fig:102' on page 2 undefined on input line 123.
+
+
+LaTeX Warning: Reference `fig:103' on page 2 undefined on input line 123.
+
 File: img/i18n_ja.jpg Graphic file (type eps)
- <img/i18n_ja.jpg>
+<img/i18n_ja.jpg>
 File: img/i18n_en.jpg Graphic file (type eps)
  <img/i18n_en.jpg>
 File: img/bebras_top.jpg Graphic file (type eps)
  <img/bebras_top.jpg>
-Overfull \hbox (4.58475pt too wide) in paragraph at lines 136--137
+Overfull \hbox (4.58475pt too wide) in paragraph at lines 154--155
  [] 
  []
+
+
+LaTeX Warning: Reference `fig:2' on page 2 undefined on input line 161.
 
 
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
@@ -373,36 +392,68 @@ Overfull \vbox (3.0pt too high) has occurred while \output is active []
 File: img/contest_access.jpg Graphic file (type eps)
 
 <img/contest_access.jpg>
+
+LaTeX Warning: Reference `fig:3' on page 3 undefined on input line 172.
+
+
+LaTeX Warning: Reference `fig:4' on page 3 undefined on input line 172.
+
 File: img/past_contest_1.jpg Graphic file (type eps)
- <img/past_contest_1.jpg>
+<img/past_contest_1.jpg>
 File: img/past_contest_2.jpg Graphic file (type eps)
  <img/past_contest_2.jpg>
-File: img/new_contest_start.jpg Graphic file (type eps)
 
+LaTeX Warning: Reference `fig:2' on page 3 undefined on input line 194.
+
+File: img/new_contest_start.jpg Graphic file (type eps)
 <img/new_contest_start.jpg>
+
+LaTeX Warning: Reference `fig:6' on page 3 undefined on input line 205.
+
+
+LaTeX Warning: Reference `fig:7' on page 3 undefined on input line 205.
+
 File: img/new_contest_1.jpg Graphic file (type eps)
- <img/new_contest_1.jpg>
+<img/new_contest_1.jpg>
+File: img/contest_end.jpg Graphic file (type eps)
+ <img/contest_end.jpg>
+
+LaTeX Warning: Reference `fig:8' on page 3 undefined on input line 228.
+
+
+LaTeX Warning: Reference `fig:9' on page 3 undefined on input line 228.
+
+
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [3]
-File: img/contest_end.jpg Graphic file (type eps)
-
-<img/contest_end.jpg>
 File: img/contest_result.jpg Graphic file (type eps)
- <img/contest_result.jpg>
+
+<img/contest_result.jpg>
 File: img/new_contest_2.jpg Graphic file (type eps)
  <img/new_contest_2.jpg>
-File: img/bebras_task_1.jpg Graphic file (type eps)
 
+LaTeX Warning: Reference `fig:10' on page 4 undefined on input line 253.
+
+File: img/bebras_task_1.jpg Graphic file (type eps)
 <img/bebras_task_1.jpg>
+
+LaTeX Warning: Reference `fig:11' on page 4 undefined on input line 265.
+
+
+LaTeX Warning: Reference `fig:12' on page 4 undefined on input line 265.
+
 File: img/create_contest_1.jpg Graphic file (type eps)
- <img/create_contest_1.jpg>
+<img/create_contest_1.jpg>
 File: img/create_contest_2.jpg Graphic file (type eps)
  <img/create_contest_2.jpg>
+Overfull \vbox (3.21349pt too high) has occurred while \output is active []
+
+
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 []\JY1/mc/m/n/10 谷 聖一\OT1/cmr/m/n/10 , \JY1/mc/m/n/10 兼宗 進\OT1/cmr/m/n/10
  , \JY1/mc/m/n/10 井戸坂 幸男\OT1/cmr/m/n/10 . \JY1/mc/m/n/10 小中高生向け国際
 情報科学コンテスト \OT1/cmr/m/n/10 Be-bras.
@@ -412,14 +463,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [5]
-(./Bebras_jinbun.aux) ) 
+(./Bebras_jinbun.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2418 strings out of 493777
- 31340 string characters out of 6151335
- 100358 words of memory out of 5000000
- 5850 multiletter control sequences out of 15000+600000
+ 2401 strings out of 493777
+ 31038 string characters out of 6151334
+ 105358 words of memory out of 5000000
+ 5836 multiletter control sequences out of 15000+600000
  13294 words of font info for 55 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 42i,10n,42p,603b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,42p,603b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bebras_jinbun.dvi (5 pages, 23044 bytes).
+Output written on Bebras_jinbun.dvi (5 pages, 22696 bytes).
