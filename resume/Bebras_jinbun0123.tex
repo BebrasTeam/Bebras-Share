@@ -1,0 +1,138 @@
+\documentclass[a4paper]{jarticle}
+\usepackage{tani_resume}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{ascmac}
+\alignbeforeskip -5mm
+\alignafterskip -5mm
+\eqnarraybeforeskip -5mm
+\eqnarrayafterskip -5mm
+\makeatletter
+\newenvironment{figurehere}
+  {\def\@captype{figure}}
+  {}
+\makeatother
+
+\jptitle{France-IOI提供の国際情報科学コンテストBebras Challenge用コンテスト環境bebras-platformの試運用}
+\etitle{}
+\jpauthor{鈴木一至 佐々木陽広}
+\eauthor{Kazushi Suzuki，Akihiro Sasaki}
+\course{谷聖一研究室}
+\year{27}
+
+
+%% 概要 %%
+\abstract{
+コンピュータ・サイエンスの普及を目的とした取り組みは，様々なところで行われている．
+その中の1つに，小・中・高校生を対象にした「Bebras Challenge」がある．Association France-IOIがBebras Challengeの独自のサーバシステムを開発し，オープンソースとして公開している．本演習では，このサーバシステムを利用して，過去に実施されたBebras-Challengeに挑戦できるWebサイトを試運用した．}
+\compheading
+
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+\setcounter{page}{1}
+
+\section{はじめに}
+
+\subsection{Bebras Challenge}
+\subsubsection{概要}
+Bebras Challenge(\cite{bebras-contest, bebras-pdf})とは，2004年にリトアニアで始められた国際的な情報科学コンテストである．日本の小学5年生から高等学校3年生を対象とし、年に1回開催される．日本は2011年度から正式参加しており，2015年には世界35カ国から130万人の児童・生徒が参加している．情報科学の事前知識がなくても解くことが可能な問題を扱い，問題に取り組むことによって情報科学の基礎概念に触れることができ，論理的思考の向上の一助になるようなものになっている．また，コンテスト後に参加者同士で問題の内容について議論することで，情報科学に興味を持つきっかけになることが期待される．
+
+\subsubsection{形式}
+ コンテストの問題は年齢に応じた区分ごとに用意されており，基本はベンジャミン(小学5年生・６年生)，カデット(中学1年生・2年生)，ジュニア(中学3年生・高校1年生)，シニア(高校2年生・3年生)の4区分であり，日本ではベンジャミンが30分10問，その他が40分12問で実地している．
+\\　問題形式は大きく2種類あり，動的にオブジェクトを操作しながら試行錯誤できる対話型と，それに対する非対話型がある．また，非対話型の中には選択肢を選んで解く選択肢型と，文字を入力して解答する文字入力型がある．
+
+\subsection{国際情報オリンピック}
+国際情報オリンピック(International Olympiad in Informatics, IOI)(\cite{ioi})とは，1989年から毎年行われる高校生を対象としたプログラミング能力を競う国際大会である．高校生以上を対象とし，その能力の育成を助け，各国の選手・教育者同士の国際交流を図ることを目的をする．
+
+
+\subsection{Association France-IOI}
+Association France-IOIは，国際情報オリンピックのフランスチームの選出と育成を目的とし2004年に設立された．フランスでのBebras Challengeを主催しており，Bebras Challengeの独自のサーバシステムbebras-platformを公開している．
+
+\section{演習目的}
+Bebras Challengeを実施するためにはサーバシステムを利用する必要があり，中でもフランス，オランダ，リトアニアなどは独自のサーバシステムを保有し運用している．日本ではオランダのサーバを利用しBebras Challengeを行っているが，コンテストに参加する教育機関のコンテンツフィルターやファイヤーウォール機器の性能も含めたネットワーク環境によっては正常にコンテストに参加することが困難な場合があった．
+\\　この問題を解決する方法の１つとして，Association France-IOIによる独自のサーバシステムbebras-platformを利用することで，正常にコンテストに参加できない教育機関の減少を期待できると考えた．本演習の目的は，このbebras-platformを用いてBebras Challengeのサーバを運用するためのノウハウの蓄積と，事後学習のための過去に実施されたコンテストへの挑戦を可能にすることである．
+
+\section{bebras-platform}
+
+
+\subsection{構成}
+bebras-platformは，サーバ全体ではなくHTMLやPHPなどのページやデータベース構成する要素の集合体である．よって，webサーバソフトウェア(Apache)とデータベース管理システム(MySQL)は変更できないが，実装する環境のOSに縛りはなく，開発者のニーズに合ったOSを選択することが可能になっている．また，このbebras-platformは更新が行われるので，随時適応する必要がある．
+
+\subsection{使用ツール}
+\begin{description}
+\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．また，Gitを使用してソフトウェア開発プロジェクトのための共有ウェブサービスとしてGithubがある．(詳細は\cite{git}参照) bebras-platformは，このGIthub上で公開されており，随時更新が行われていた．
+\end{description}
+
+\begin{description}
+\item[Bower]Twitter社によるフロントエンド用パッケージ管理ツールである．json形式の設定ファイルを用意することで，記述されたパッケージを一括で取り込むことができる．(詳細は\cite{bower}参照)
+\end{description}
+
+\begin{description}
+\item[Composer] PHPの依存関係管理ツールである．bowerと同様にjsonから複数のパッケージをインストールすることができる．(詳細は\cite{composer}参照)
+\end{description}
+
+\begin{description}
+\item[i18next] フロントエンドにて国際化を可能にするライブラリである．JSONと呼ばれるデータ記述形式に対応する訳記入することで，対応する単語を翻訳することが可能である．HTML上では，data-i18n属性を用い，それぞれ翻訳箇所に任意の文字列を入力し使用する．(詳細は\cite{i18n}参照)．
+\end{description}
+
+
+\subsection{ユーザ}
+bebras-platformには，参加者，管理者，教師の３種類のユーザが存在する．
+\begin{description}
+\item[管理者]  ユーザの中で最も強い権限を持ち，問題(タスク)の追加，コンテストの作成や自分以外のユーザの認証が可能となっている．ただし最初の管理者を登録するにはデータベースを直接変更する必要がある． 
+\end{description}
+
+\begin{description}
+\item[教師] 管理者の下位互換的な役割であり，問題やコンテストの作成はできないが，コンテストの行うためのグループの作成をするためのユーザである．教師はユーザ登録後に管理者に認証してもらう必要があり，それまでは権限の一切ないユーザとして扱われる．
+\end{description}
+
+\begin{description}
+\item[参加者] 管理者，教師以外のユーザとして参加者がある．参加者は，コンテストの参加，過去問の参照が可能となっており，コンテスト参加時に発行されるグループコードを入力することで，コンテストの結果を参照することも可能である．
+\end{description}
+
+
+
+
+\section{bebras-platformの試運用}
+\subsection{コンテスト環境の構築}
+\subsubsection{翻訳}
+bebras-platformはほとんどが元国のフランス語で記載されているため，i18nextライブラリを使用し翻訳を行った．しかし，一部はi直接コードに埋め込まれている箇所の翻訳はi18nextで対応することは不可能であったため，その箇所の翻訳は手作業で行った．
+\subsubsection{過去問の追加}
+2014,2015年度の過去のコンテスト問題を過去問として公開した．問題はbebras-platformのサンプル問題を参考にテンプレートを作成し，そのテンプレートを編集する形で問題を追加した．本演習では，一部機能の実装となっているため，非対話型の問題形式のみの対応になっている．
+
+\subsection{開発管理環境}
+bebras-platformを公開するまでの流れとして様々な手段があるが，随時Githubにて更新されるため，運用手順を明確化する必要があった．本演習では，一度手元の環境で構築し，ローカル環境をそのまま本番環境へコピーする形で運用している．こうすることでBowerなどの管理系ツールを本番環境へ導入する必要がなくなり，更にローカル環境で一度実装することによって本番環境での不具合を減らすことが可能である．
+
+\subsection{ドキュメント作成}
+翻訳の説でも記載した通り，bebras-platformはフランスのシステムであるため，日本語での記載は一切なく，実装に至るまで様々な試行錯誤を行った．この試行錯誤を無駄にしないよう，本演習の目的の１つにもなっているBebras Challengeを運用するにあたってのノウハウの蓄積のためのドキュメントを作成した．このドキュメントは環境構築手順から現在の運用状況など報告者以外の人がこの試運用したbebras-platformを手間なく理解するための仕様書である．元のbebras-platformは随時更新されるため，必要に応じてこのドキュメントも整理することが今後重要になる．
+
+\section{終わりに}
+本演習では，Association France-IOIによるBebras Challenge用コンテスト環境bebras-platformの試運用を行った．
+\\　作成した過去のコンテスト問題は非対話型の形式のみの対応となっているため，対話型問題の実装が今後の課題となる．また，問題を作成するにあたってテンプレートは作成したが，問題の選択肢，解答などの要素をそれぞれ手動で入力する必要があるため，この問題作成までの一連の流れの自動化が，改善点の１つとして挙げられる．
+\\　過去のコンテスト問題だけでなく，実際のBebras Challengeの開催も視野入れていたが，bebras-platformの実装と時期が合わず，2015年度での開催はできなかった．そのため2016年度以降のBebras Challengeの開催も今後の課題となる．
+
+\end{multicols}
+
+%%%%% 参考文献 %%%%%
+\begin{thebibliography}{1}
+
+\bibitem{bebras-contest} 「ビーバーコンテスト」情報ページ.  http://bebras.eplang.jp/ , (参照 2015-12-08)
+\bibitem{bebras-pdf} 谷 聖一, 兼宗 進, 井戸坂 幸男. 小中高生向け国際情報科学コンテストBebras.  http://www.ipsj.or.jp/magazine/9faeag0000005al5-att/peta55-11.pdf, (参照 2015-12-08)
+\bibitem{bebras-france-platform} Bebras Platform. https://github.com/France-ioi/bebras-platform
+\bibitem{ioi} 国際情報オリンピック http://www.ioinformatics.org/index.shtml   http://www.ioi-jp.org/ioi/
+\bibitem{git} Git  https://ja.wikipedia.org/wiki/Git
+\bibitem{bower}Bower  http://bower.io/
+\bibitem{composer}Composer  https://getcomposer.org/
+%\bibitem{dbv}dbv  http://dbv.vizuina.com/
+\bibitem{i18n}i18n  https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%8C%96%E3%81%A8%E5%9C%B0%E5%9F%9F%E5%8C%96
+
+
+
+\end{thebibliography}
+
+\end{document} 
+
+
+
+
