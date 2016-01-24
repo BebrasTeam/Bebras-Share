@@ -1,47 +1,59 @@
-【contestInterface/index.php】
-・コンテスト開始時のアクセスコード
-155 : Code d’accès アクセスコード
+【翻訳が必要な箇所】
+・コンテスト開始時のアクセスコード「翻訳済み」
+contestInterface/index.php 
+155: Code d’accès
 
-・コンテスト中のTemps,Score
-208,209 : Temp,Score 時間,スコア
+・コンテスト開始時のアラート 「コメントアウト」
+contestInterface/common.js
+560: alert("C'est parti ! Notez votre score en haut à gauche qui se met à jour au fur et à mesure de vos réponses !”);
 
-【contestInterface/common.js】
-・コンテスト開始時のアラート
-566 : alert("C'est parti..) コメントアウト
 
-・コンテストコード入力時のエラー
-412 : Désolé, il est impossible de recharger… コンテストの解答確認を終了し、トップページへ戻ります
+・コンテストコード入力時のエラー 「翻訳済み」
+contestInterface/common_contest.php
+6,20 Mot de passe invalide
+contestInterface/data.php
+117,287 Mot de passe invalide
 
-・コンテスト中、終了せずにリロードしたあとのアラート
-1472 :  Voulez-vous reprendre l'épreuve commencée ? コンテストを再開する場合はokをクリックしてください
+・コンテスト終了後のリロードアラート 「翻訳済み」
+contestInterface/common.js
+405: Désolé, il est impossible de recharger…
 
-・コンテスト中のロードエラー時
-604 : Il s\'est produit une anomalie lors du téléchargement du contenu du concours. Veuillez tenter de recharger la page avec Ctrl+R ou Ctrl+F5. Si cela ne fonctionne pas, essayez éventuellement avec un autre navigateur. En cas d\'échec répété, merci de contacter la hotline, pour que nous puissions rechercher la cause de ce problème. 問題ロードエラー。キャッシュを削除して再開してください。
+・コンテスト中、終了せずにリロードしたあとのアラート 「翻訳済み」
+contestInterface/common.js
+1464: if (!confirm("Voulez-vous reprendre l'épreuve commencée ?”)
 
-【contestInterface/common_contest.php】
-6,20 : Mot de passe invalide コードが間違っています 
+・コンテスト中のロードエラー時 「翻訳済み」
+contestInterface/common.js
+597 'Il s\'est produit une anomalie lors du téléchargement du contenu du concours. Veuillez tenter de recharger la page avec Ctrl+R ou Ctrl+F5. Si cela ne fonctionne pas, essayez éventuellement avec un autre navigateur. En cas d\'échec répété, merci de contacter la hotline, pour que nous puissions rechercher la cause de ce problème.'
 
-【teacherInterface/bebras-tasks/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js】
+
+・コンテスト中のTemps,Score 「翻訳済み」
+contestInterface/index.php 
+208,209
+
+・問題のボタン 「翻訳済み」
+modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js
+796: value=“Recommencer”
+739,751,763 value=“Valider”
+
+modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js: 「翻訳済み」
+24
+220: Votre réponse : 
+
 ・回答時のメッセージ
-628: getFullFeedbackSavedMessage関数内
+modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js: 
 634,636,640: Votre score est maintenant　「コメントアウト」
 
-・問題のボタン
-739,751,763 Valider 答え合わせ
-796: Recommencer　リセット
+628: getFullFeedbackSavedMessage: function(taskMode) 「翻訳済み」
+657: Rechargez la réponse validée
 
-【modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js】
-・解答
-24 :         警告：入力された値が整数ではありません
-220: Votre réponse :  解答 : 
+modules/integrationAPI.01/official/miniPlatform.js: 「翻訳済み」
+52 >Vous pouvez maintenant lire la solution en bas de la page
+89 Voir la solution
+182 task,solution
 
-【modules/integrationAPI.01/official/miniPlatform.js】
 
-52 : >Vous pouvez maintenant lire la solution en bas de la page　これで解答を読み込むことができます.
-89 : Voir la solution　解答を表示
-182 : task,solution 問題、解答
-
-編集ファイル】
+【編集ファイル】
 contestInterface/
 index.php
 235
@@ -55,4 +67,3 @@ common.js
 1471 clear_view();
 1427 document.getElementById('b-box').style.display='none';
 1418 castor 2015の変更
-
