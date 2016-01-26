@@ -1,0 +1,70 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>タイトル</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(4, [
+            "<img src='watering_answer_a.png'  width='150'>",
+            "<img src='watering_answer_b.png'  width='150'>",
+            "<img src='watering_answer_c.png'  width='150'>",
+            "<img src='watering_answer_d.png'  width='150'>"
+            ], "added", "#answers_2014-SI-07");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2014/2014-SI-07/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["2"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>水やり</h1>
+<p>下の図は，管（くだ）とバルブを使った花に水を流す仕組みです。<br />
+バルブが開いているかどうかはスイッチの向きでわかります。</p>
+<div class="ie5" ><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td" style="text-align:center;"><img src="watering_open_valve.png" alt="閉じたバブル" title="閉じたバブル" width="72" height="181" /></td><td class="style_td" style="text-align:center;"><img src="watering_closed_valve.png" alt="開いたバブル" title="開いたバブル" width="72" height="181" /></td></tr><tr><td class="style_td">バルブが開いている</td><td class="style_td">バルブがしまっている</td></tr></tbody></table></div>
+<p>バルブが開いていると水が流れ，バルブがしまっていると水は流れません。<br />
+<strong>下の図で水はどの花に流れるでしょうか。水を受け取ると花は元気になります。</strong></p>
+<p><img src="SI-07.png" alt="水やり 問題" title="水やり 問題" width="246" height="259" /></p>
+
+<div class="reponses" id="answers_2014-SI-07">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<li>正解は次の絵です。
+<div style="text-align:center"><p><img src="watering_answer_b.png" alt="水やり正解" title="水やり正解" width="203" height="76" /></p></div>
+<ul class="list2" ><li>左の花は，バルブが閉まっているので水が流れてきません。</li>
+<li>右の花は，真ん中のタンクからのバルブが閉まっていて，右のタンクは空なので水が流れてきません。
+<div style="text-align:center"><p><img src="2014-SI-07_explanation.png" alt="水やり正解説明" title="水やり正解説明" width="219" height="271"    class=""/></p></div></li></ul></li>
+<h2>解説</h2>
+<ul class="list2" ><li>コンピュータは論理回路という小さな部品からできています。論理回路ではそれぞれの部品が線でつながれていて，その線に電気が流れているかどうかで信号を伝えています。</li>
+<li>この問題では，前の部品から流れてくる電流をタンクの水に，信号を流すかどうかを決める部品をバルブとして，論理回路の原理を扱いました。</li>
+<li>コンピュータで扱われる信号は，この問題で見たように「電流が流れる」「電流が流れない」の2つの状態で表されます。そのため，コンピュータの内部で行われる計算は0と1の数字を使う2進数が使われています。</li></ul>   
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>

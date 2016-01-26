@@ -1,0 +1,75 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>壊れた時計</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "<img src='2014-JP-02-fig_choices1.png' width='200'>",
+            "<img src='2014-JP-02-fig_choices2.png' width='200'>",
+            "<img src='2014-JP-02-fig_choices3.png' width='200'>",
+            "<img src='2014-JP-02-fig_choices4.png' width='200'>"
+            ], "added", "#answers_2014-JP-02");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2014/2014-JP-02/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["1"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>壊れた時計</h1>
+<p>ビ太郎はデジタル時計をこわしてしまいました。<br />
+この時計がこわれる前は，数字を次の図のように表していました。</p>
+<p><img src="2014-JP-02-fig1.png" alt="こわれた時計 説明" title="こわれた時計 説明" width="328" height="61" /></p>
+<p>時計を見てみると，数字を表すために必要な線が1つ消えてしまい，次の絵のようにちがう時間になってしまいました。</p>
+<p><img src="2014-JP-02-fig2.png" alt="こわれた時計 問題" title="こわれた時計 問題" width="178" height="69" /></p>
+<p><strong>下の時間の中で，こわれて上の絵のようになってしまうかもしれないものはどれですか？</strong></p>
+
+<div class="reponses" id="answers_2014-JP-02">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<ul class="list1" ><li>正解は「6:39」です。
+<ul class="list2" ><li>数字の線が1本だけ消えている場合，元の数字は次の可能性があります。
+<ul class="list3" ><li>6が8だった。</li>
+<li>3が9だった。</li>
+<li>5が6か9だった。</li></ul></li>
+<li>「6:35」に当てはめると，可能性は4通りの時刻になります。
+<ul class="list3" ><li>（6が8だった場合）「8:35」：これは選択肢にありません。</li>
+<li>（3が9だった場合）「6:95」：これは正しい時刻ではありません。</li>
+<li>（5が6だった場合）「6:36」：これは選択肢にありません。</li>
+<li>（5が9だった場合）「6:39」：正解です。</li></ul></li></ul></li>
+
+<h2>解説</h2>
+<ul class="list2" ><li>数字を構成する7本の線は，コンピュータで扱うデータの表現に対応しています。この問題では，データの一部が不完全な状態になったことを検出して元のデータを復元する「エラー訂正」の技術を扱っています。</li></ul>
+   
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>

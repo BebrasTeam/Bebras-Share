@@ -1,0 +1,75 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>タイトル</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "「川の中」で遊んだ",
+            "「川辺」で遊んだ",
+            "「家の中」で遊んだ",
+            "遊ばなかった"
+            ], "added", "#answers_2014-JP-05A");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2014/2014-JP-05A/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["4"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>遊び場</h1>
+<p>ビ太郎は，その日と前の日の天気で遊ぶ場所を決めています。</p>
+<div style="text-align:center"><p><img src="2014-JP-05-ThinkingPlace.png" alt="遊び場 説明" title="遊び場 説明" width="320" height="205" /></p></div>
+<ul class="list1" ><li>今日が晴れで昨日が雨のときは，「川の中」で泳ぎます。</li>
+<li>今日が晴れで昨日も晴れのときは，「川辺」で遊びます。</li>
+<li>今日が雨で昨日が晴れのときは，「家の中」でつみ木を使って遊びます。</li>
+<li>今日が雨で昨日も雨のときは，遊びません。</li></ul>
+<p>11月1日から11月８日の天気は次のようになっていました。</p>
+<p><img src="jp-05.png" alt="遊び場 問題" title="遊び場 問題" width="561" height="90" /></p>
+<p><strong>ビ太郎は，11月7日はどこで遊んだでしょうか？</strong></p>
+
+<div class="reponses" id="answers_2014-JP-05A">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<ul class="list1" ><li>正解は「遊ばなかった」です。
+<ul class="list2" ><li>ビ太郎は今日が雨で昨日も雨のときは遊びません。</li>
+<li>今日（11月7日）は雨で昨日（11月6日）も雨でしたのでビ太郎は遊びませんでした。</li></ul></li>
+
+<h2>解説</h2>
+<ul class="list2" ><li>この問題は論理について考える問題です。</li>
+<li>「雨か晴れか」ということは論理値として考えることができます。</li>
+<li>今日が「雨か晴れか」と昨日が「雨か晴れか」ということは、2つの論理値の組み合わせで「昨日は晴れで今日も晴れ」「昨日は晴れで今日は雨」「昨日は雨で今日は晴れ」「昨日は雨で今日も雨」という4通りがあります。</li>
+<li>「「昨日は雨」で「今日も雨」」のような2つの論理値が両方とも成り立つ論理式を論理積（AND条件）といいます。</li>
+<li>コンピュータは「前の入力がTで次の入力がAのときは「た」に変換する」のように、論理値を利用したり論理積のような論理演算を数多く行いながら動作しています。</li></ul>
+   
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>
