@@ -24,7 +24,7 @@
 %% 概要 %%
 \abstract{
 コンピュータ・サイエンスの普及を目的とした取り組みは，様々なところで行われている．
-その中の1つに，小・中・高校生を対象にした「Bebras Challenge」がある．Association France-IOIがBebras Challengeの独自のサーバシステムを開発し，オープンソースとして公開している．本演習では，このサーバシステムを利用して，過去に実施されたBebras-Challengeに挑戦できるWebサイトを試運用した．}
+その中の1つに，小・中・高校生を対象にした「Bebras Challenge」がある．Association France-IOIがBebras Challengeの独自のサーバシステムである「bebras-platform」を開発し，オープンソースとして公開している．本演習では，bebras-platformを利用して，日本でのコンテストサーバ運用のノウハウ蓄積と過去に実施されたBebras Challengeの問題の公開を行った．}
 \compheading
 
 \begin{document}
@@ -62,7 +62,7 @@ bebras-platformは，サーバ全体ではなくHTMLやPHPなどのファイル�
 
 \subsection{使用ツール}
 \begin{description}
-\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．また，Gitを使用してソフトウェア開発プロジェクトのための共有ウェブサービスとしてGithubがある．(詳細は\cite{git}参照) bebras-platformは，Github上で公開されており，随時更新が行われている．
+\item[Git]プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである．また，Gitを使用してソフトウェア開発プロジェクトのための共有ウェブサービスとしてGithubがある．(詳細は\cite{git}参照)\\ bebras-platformは，Github上で公開されており，随時更新が行われている．
 \end{description}
 
 \begin{description}
@@ -74,12 +74,38 @@ bebras-platformは，サーバ全体ではなくHTMLやPHPなどのファイル�
 \end{description}
 
 \begin{description}
-\item[i18next] フロントエンドにて国際化を可能にするライブラリである．JSONと呼ばれるデータ記述形式に対応する訳記入することで，対応する単語を翻訳することが可能である．bebras-platformのHTML上では，data-i18n属性を用い，それぞれ翻訳箇所に任意の文字列を入力し使用する．(詳細は\cite{i18n}参照)．
+\item[DBV]  Webページ上でデータベース管理を行うためのツールである．主にAssociation France-IOIのプロジェクトに使用される．(詳細は\cite{dbv}参照)
 \end{description}
+
+\begin{description}
+\item[i18next] フロントエンドにて国際化を可能にするライブラリである．JSONと呼ばれるデータ記述形式に対応する訳記入することで，対応する単語を翻訳することが可能である．(詳細は\cite{i18n}参照)\\bebras-platformのHTML上では，data-i18n属性を用い，それぞれ翻訳箇所に任意の文字列を入力し使用する．
+\end{description}
+
+\subsection{ページ構造}
+bebras-platformのユーザ用のページは2種類存在する．1つ目はコンテスト参加者が利用するページである(図\ref{fig:1}参照)．コンテストの参加や過去問の参照を行うことができる．
+\begin{figurehere}
+\begin{center}
+\fbox{
+\includegraphics[bb=0 0 1280 679,width=8cm]{img/bebras_top.jpg}
+}
+\end{center}
+\caption{bebras-platformの参加者用ページ}\label{fig:1}
+\end{figurehere}
+
+2つ目は管理者が利用するページである(図\ref{fig:2}参照)．コンテスト（サイト）の管理者がログインし，コンテストの作成や問題の追加を行うことができる．
+
+\begin{figurehere}
+\begin{center}
+\fbox{
+\includegraphics[bb=0 0 1442 872,width=8cm]{img/admin_top.jpg}
+}
+\end{center}
+\caption{bebras-platformの管理者用ページ}\label{fig:2}
+\end{figurehere}
+
 
 
 \subsection{ユーザ}
-bebras-platformには，参加者，管理者，教師の３種類のユーザが存在する．
 \begin{description}
 \item[管理者]  ユーザの中で最も強い権限を持ち，問題(タスク)の追加，コンテストの作成や自分以外のユーザの認証が可能である．ただし最初の管理者の登録はデータベースを直接変更する必要がある． 
 \end{description}
@@ -127,8 +153,8 @@ bebras-platformを公開するまでの流れとして様々な手段がある�
 \bibitem{git} Git  https://ja.wikipedia.org/wiki/Git
 \bibitem{bower}Bower  http://bower.io/
 \bibitem{composer}Composer  https://getcomposer.org/
-%\bibitem{dbv}dbv  http://dbv.vizuina.com/
-\bibitem{i18n}i18n  https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%8C%96%E3%81%A8%E5%9C%B0%E5%9F%9F%E5%8C%96
+\bibitem{dbv}dbv  http://dbv.vizuina.com/
+\bibitem{i18n}i18n  http://i18next.com/
 
 
 
