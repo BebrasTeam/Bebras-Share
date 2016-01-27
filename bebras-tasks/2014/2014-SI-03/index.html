@@ -1,0 +1,85 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>カッコを使わない数式</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "2 a b × a c × b c × + + ×",
+            "2 a b + a c + b c + × × +",
+            "2 a b × b c × a c × + ×",
+            "2 a × b a + × c b + × c ×"
+            ], "added", "#answers_2014-SI-03");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["1"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>カッコを使わない数式</h1>
+<p>
+
+<p>ビ太郎は「（a＋b）×2」のようなカッコのある数式が嫌いです。<br />
+ある日、計算する値の後に＋,−,×,÷などの記号を書くと，カッコを使わなくても式を書けることを発見しました。<br />
+たとえば，「（a＋b）×２」という式は，（aとbを足したものに2をかけるという意味で）「a b ＋ 2 ×」と書きます。<br />
+また、「2×（a＋b）」という式は，（2にaとbを足したものをかけるという意味で）「2 a b ＋ ×」と書きます。</p>
+<p>カッコを使わない式を普通の式に戻すときは，「2つの値に続く記号」を普通の式に戻すことを繰り返します。<br />
+たとえば「2 a b ＋ ×」という式は，下の図のように最初に「a b ＋」の部分を「a＋b」に戻し，2にその結果をかけることで「2×（a＋b）」という式に戻すことができます。</p>
+<p><strong>ビ太郎は「2 ×（a × b ＋ a × c ＋ b × c）」という式をカッコを使わないで書きたいと思いました。</strong><br />
+<strong>この式と同じ式を表しているのはどれでしょうか？</strong></p>
+</p>
+
+<div class="reponses" id="answers_2014-SI-03">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+<ul class="list2" ><li>正解の式はこのように通常の式に戻していくことができます。
+<ul class="list3" ><li>「a b ×」「a c ×」「b c ×」を「a×b」「a×c」「b×c」に戻すと「2 （a×b）（a×c）（b×c）＋ ＋ ×」になります。</li>
+<li>「（a×c）（b×c） ＋」を戻すと「2 （a×b） （a×c＋b×c） ＋ ×」になります。</li>
+<li>「(a×b) （ac＋bc） ＋」を戻すと「2 (a×b+a×c＋b×c) ×」になります。</li>
+<li>これを戻すと「2×（a×b＋a×c＋b×c）」になります。
+  <div style="text-align:center"><p><img src="2014-SI-07-explanation-table.png" alt="解法" title="解法" width="417" height="115"    class=""/></p></div></li></ul></li></ul></li>
+</p>
+
+<h2>解説</h2>
+<p>
+  <ul class="list2" ><li>2つの値を計算するときに，「2＋3」のように命令（計算の記号）を2つの値の真ん中に置く書き方を「中置記法」といいます。</li>
+<li>プログラミング言語の関数呼び出しの「add(2, 3);」のように，命令の後に計算する値を書く書き方を「前置記法」といいます。</li>
+<li>この問題の「2 3 ＋」のように，計算する値の後に命令を書く書き方を「後置記法」といいます。</li>
+<li>後置記法はForthやPostScriptというプログラミング言語で使われており，PDFの内部でも後置記法が使われています。</li>
+<li>また，「2と3を加える」のように日本語に近い形で読み下すことができることから、ドリトルのような教育用のプログラミング言語でも使われています。</li></ul>
+
+</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

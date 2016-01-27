@@ -1,0 +1,88 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>儀式</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "Drum，Boring，Musical，Fanfare，Fireworks，Lottery",
+            "Drum，Musical，Fanfare，Boring，Lottery，Fireworks",
+            "Boring，Drum，Musical，Lottery，Fanfare，Fireworks",
+            "Boring，Lottery，Drum，Musical，Fanfare，Fireworks"
+            ], "added", "#answers_2014-FR-01");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["4"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>儀式</h1>
+<p>
+<p>ビーバーの国では，お祝いの日にたくさんの行事があります。すべての行事は決められた順番で行う必要があります。</p>
+<p>下の図には，行われるすべての行事が含まれています。矢印は，どの行事がどの行事の前に行われていないといけないかを表しています。<br />
+たとえば「Musical Intermezzo (間奏曲演奏)」は「Drum Roffle (太鼓連打)」と「Boring Speeches (退屈なあいさつ)」が両方とも終わった後でないと行えません。</p>
+<p><img src="FR-01.png" alt="儀式の図" title="儀式の図" width="395" height="191" /></p>
+<p>&quot;Choir Singing&quot;から始まり，&quot;Thank you&quot;で終わります。<br />
+<strong>2番目から7番目の並べ方で，図の規則に合っていないのはどれですか？</strong></p>
+</p>
+
+<div class="reponses" id="answers_2014-FR-01">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+<ul class="list2" ><li>図をわかりやすく描き直すと，次のようになります。<br />
+<img src="Ceremony.png" alt="儀式 解法説明" title="儀式 解法説明" width="566" height="84" /></li>
+<li>対話形式の問題では，作成した行事予定がこの図に当てはまる順序になっていれば正解です。
+<ul class="list3" ><li>たとえば「Choir Singing(聖歌隊合唱), Boring Speeches(退屈な挨拶) , Lottery(抽選会), Drum Roffle(太鼓連打), Musical Intemezzo(間奏曲演奏), Fanfare(ファンファーレ), Fireworks(花火), Thank you(謝辞)」は正解の1つです。</li></ul></li>
+<li>他にも以下が正解です。（最初の「Choir Singing」と最後の「Thank you」は省略しています。）
+<ul class="list3" ><li>「Drum Roffle」 - 「Boring Speeches」 - 「Lottery」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Fireworks」</li>
+<li>「Drum Roffle」 - 「Boring Speeches」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Fireworks」 - 「Lottery」</li>
+<li>「Drum Roffle」 - 「Boring Speeches」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Lottery」 - 「Fireworks」</li>
+<li>「Drum Roffle」 - 「Boring Speeches」 - 「Musical Intermezzo」 - 「Lottery」 - 「Fanfare」 - 「Fireworks」</li>
+<li>「Boring Speeches」 - 「Drum Roffle」 - 「Lottery」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Fireworks」</li>
+<li>「Boring Speeches」 - 「Drum Roffle」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Fireworks」 - 「Lottery」</li>
+<li>「Boring Speeches」 - 「Drum Roffle」 - 「Musical Intermezzo」 - 「Fanfare」 - 「Lottery」 - 「Fireworks」</li>
+<li>「Boring Speeches」 - 「Drum Roffle」 - 「Musical Intermezzo」 - 「Lottery」 - 「Fanfare」 - 「Fireworks」</li></ul></li>
+<li>非対話形式の問題では，図の規則に合っていない選択肢は &quot;Drum, Musical, Fanfare, Boring, Lottery, Fireworks&quot; です。&quot;Boring&quot; が &quot;Musical&quot; の後に置かれてしまっています。</li></ul></li>
+</p>
+
+<h2>解説</h2>
+<p>
+<ul class="list2" ><li>この問題では，対象を「ノード（頂点）」と「エッジ（辺）」で表すグラフ表現を扱っています。</li>
+<li>この問題で，儀式の行事は順序を示す矢印で結ばれた有向グラフとして表現されています。</li>
+<li>コンピュータでは，グラフ構造を利用することで複雑なデータを表現したり、鉄道の経路探索のような複雑な問題を扱ったりしています。</li>
+<li>この問題の図を上の図のように並び替えることはトポロジカルソートと呼ばれるもので，エッジを出している（矢印の元）ノードが，そのエッジが入る（矢印の先）ノードよりも前に置くように並び替えます。これにより，この問題のように前に行われていなければいけない行事があるときのスケジューリングを考えることができます。</li></ul></li>
+</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

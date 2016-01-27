@@ -1,0 +1,78 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>貨物船</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "「220 60」と「130 120 90」",
+            "「120 90 90」と「220 60」",
+            "「130 90 60」と「120 100 90」",
+            "「100 130 60」と「120 90 90」"
+            ], "added", "#answers_2014-DE-08");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["4"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>貨物船</h1>
+<p>
+<p>ビ太郎とビバ子は「Lisa 1」と「Lisa  2」という2隻（せき）の船を持っています。<br />
+それぞれの船は300キログラム以下の荷物を積んで運ぶことができます。<br />
+ビ太郎とビバ子は樽（たる）に入った魚の運搬（うんぱん）を頼まれました。<br />
+樽には魚が入った状態の重さ（キログラム）が書かれています。</p>
+<p><img src="2014-DE-08-JP2.png" alt="貨物船非対話型 問題" title="貨物船非対話型 問題" width="480" height="176" /></p>
+<p>運びたい樽は7個ありますが，全部を積むことはできません。<br />
+<strong>2隻の船に積む樽（たる）の重さの合計が一番大きくなる積み方はどれですか？</strong></p>
+</p>
+
+<div class="reponses" id="answers_2014-DE-08">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+<ul class="list2" ><li>１つの船に「120 90 90」の組合せで樽をのせ，もう1つの船に「130 100 60」の組合せで樽をのせると，2隻の船に積む樽の重さの合計が最大になります。</li>
+<li>非対話型問題では「「100 130 60」と「120 90 90」」が正解です。
+<ul class="list3" ><li>非対話型の選択肢を検討すると次のようのになります。
+<div class="ie5" ><table class="style_table" cellspacing="1" border="1"><tbody><tr><th class="style_th" colspan="2">Lisa1の船</th><th class="style_th" colspan="2">Lisa2の船</th><th class="style_th">合計</th></tr><tr><td class="style_td">220 60</td><td class="style_td">280kg</td><td class="style_td">130 120 90</td><td class="style_td">340kg</td><td class="style_td">重量オーバー</td></tr><tr><td class="style_td">130 90 60</td><td class="style_td">280kg</td><td class="style_td">120 100 90</td><td class="style_td">310kg</td><td class="style_td">重量オーバー</td></tr><tr><td class="style_td">120 90 90</td><td class="style_td">300kg</td><td class="style_td">220 60</td><td class="style_td">280kg</td><td class="style_td">合計580kg</td></tr><tr><td class="style_td">100 130 60</td><td class="style_td">290kg</td><td class="style_td">120 90 90</td><td class="style_td">300kg</td><td class="style_td">合計590kg（正解）</td></tr></tbody></table></div></li></ul></li></ul></li>
+</p>
+
+<h2>解説</h2>
+<p>
+<ul class="list2" ><li>さまざまな組み合わせの中から「制限の中で最大の荷物を載せる」という最適な組み合わせを見つけ出す問題です。</li>
+<li>数がそれほど多くないもの同士の組み合わせでも，組合せ方は膨大になることがあります。そのため，コンピュータは高速に計算などを行えますが，すべての場合を調べてると時間がかかってしまいいつまでも処理が終わらないことがあります。</li>
+<li>現在も効率良く最適解を求めるアルゴリズムの研究が続けられています。</li></ul></li>
+</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>
