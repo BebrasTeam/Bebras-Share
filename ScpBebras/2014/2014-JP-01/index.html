@@ -3,7 +3,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>村のスピーカー</title>
+      <title>川上り</title>
     <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
     <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
@@ -15,12 +15,12 @@
     <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
     <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
       <script class="task" type="text/javascript">
-         stdAnsTypes.genTaskMultipleChoices(4, [
-            "2",
-            "3",
-            "4",
-            "5"
-            ], "added", "#answers_2014-JP-06",true);
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "スタート → A → C → E → ゴール",
+            "スタート → A → C → E → D → ゴール",
+            "スタート → B → C → D → E → ゴール",
+            "スタート → B → C → D → ゴール"
+            ], "added", "#answers_2014-JP-01");
       </script>
 
       <script class="remove" type="text/javascript">var json = {
@@ -33,21 +33,22 @@
     "taskPathPrefix": "",
     "modulesPathPrefix": "",
     "browserSupport": [],
-    "acceptedAnswers": ["2"]
+    "acceptedAnswers": ["3"]
 };</script>
    </head>
    <body>
       <div id="task"> <!-- 問題内容 -->
-<h1>村のスピーカー</h1>
+<h1>川上り</h1>
 <p>
-<p>村の地図で縦と横の線が交わる場所にだけ，スピーカーを置くことができます。スピーカーの音が届く範囲は，次の図のようにスピーカー（<span style="color:red">★</span>印）の周りにある12個の灰色のブロックです。</p>
-<div style="text-align:center"><p><img src="2014-JP-06-fig1.png" alt="村のスピーカー 説明" title="村のスピーカー 説明" width="117" height="117" /></p></div>
-<p>次の図はビーバー村の地図です。▲印の場所に家があります。</p>
-<div style="text-align:center"><p><img src="2014-JP-06-fig2.png" alt="村のスピーカー 問題" title="村のスピーカー 問題" width="205" height="205" /></p></div>
-<p><strong>すべての家にお知らせが届くのに必要なスピーカーの最小台数は，いくつですか？</strong></p>
+<p>ビ太郎は枝を食べると体力がつきます。ビ太郎は15本の枝を食べてからゴールを目指して川を上ります。下の図のように，川はいくつかの道に分かれていて，途中には障害物があります。</p>
+<p><img src="2014-JP-01-fig-alt-JP.png" alt="川上り 問題" title="川上り 問題" width="384" height="252" /></p>
+<p>障害物を乗り越えるたびに次の表のように体力を使います。</p>
+<div class="ie5" ><table class="style_table" cellspacing="1" border="0"><tbody><tr><th class="style_th">障害物</th><th class="style_th">消費する体力</th></tr><tr><td class="style_td" style="text-align:center;"><img src="2014-JP-01-grass.png" alt="川上り 障害物草" title="川上り 障害物草" width="35" height="33" /></td><td class="style_td">枝2本分</td></tr><tr><td class="style_td" style="text-align:center;"><img src="2014-JP-01-rocks.png" alt="川上り 障害物岩" title="川上り 障害物岩" width="32" height="28" /></td><td class="style_td">枝3本分</td></tr><tr><td class="style_td" style="text-align:center;"><img src="2014-JP-01-dam.png" alt="川上り 障害物堰" title="川上り 障害物堰" width="62" height="34" /></td><td class="style_td">枝5本分</td></tr></tbody></table></div>
+<p>消費する体力が枝15本分を超えると，ゴールにとだりつけません。<br />
+ゴールにたどりつくには，どの道をたどればいいでしょうか？</p>
 </p>
 
-<div class="reponses" id="answers_2014-JP-06">
+<div class="reponses" id="answers_2014-JP-01">
 </div>
 
 </div> <!-- 問題終わり -->
@@ -56,21 +57,19 @@
       <div id="solution"> <!-- 解答内容 -->
 <h2>解答</h2>
 <p>
-<ul class="list1" ><li>正解は「3」です。
-<ul class="list2" ><li>2個のスピーカーではすべての家にお知らせを届けることはできません。</li>
-<li>3個のスピーカーでは，次のどちらかの置き方で，すべての家にお知らせを届けることができます。
-<div style="text-align:center"><p><img src="2014-JP-06-fig_ans1.png" alt="村のスピーカー説明1" title="村のスピーカー説明1" width="206" height="205" />　<img src="2014-JP-06-fig_ans2.png" alt="村のスピーカー説明2" title="村のスピーカー説明2" width="206" height="206" /></p></div></li></ul></li>
+<ul class="list1" ><li>正解は「スタート → B → C → D → E → ゴール」です。
+<ul class="list2" ><li>「スタート → A → C → E → ゴール」は2+5+5+5=17の体力を消費します。</li>
+<li>「スタート → A → C → E → D → ゴール」は2+5+5+2+3+5=22の体力を消費します。</li>
+<li>「スタート → B → C → D → E → ゴール」は3+3+2+2+5=15の体力を消費します。（最も小さいので正解です）</li>
+<li>「スタート → B → C → D → ゴール」は3+3+2+3+5=16の体力を消費します。</li></ul></li>
 <li>試してみよう
-<ul class="list2" ><li>線と線が交わる場所をクリックすると，そこにスピーカー（<span style="color:red;"  class="qhm-deco">★</span>印）を置けます。</li>
-<li>スピーカー（<span style="color:red;"  class="qhm-deco">★</span>印）をクリッすると，そのスピーカーを取り除けます。
-<iframe width="650" height="500" src="speaker_sol.html" frameborder="0" allowfullscreen></iframe>
+<ul class="list2" ><li>どの順番で移動すると，どのように体力を消費するか試してみよう。
+<iframe width="700" height="545" src="river_sol.html" frameborder="0" allowfullscreen></iframe>
 </li></ul></li>
 </p>
 
 <h2>解説</h2>
 <p>
-<ul class="list2" ><li>できるだけ少ない機器で必要なエリア（領域）をカバーする技術は，携帯電話の通信用のアンテナをどのように配置するかといった形で世の中で使われています。</li></ul></li>
-<li>出題国: この問題は日本で作成されました。</li></ul>
 
 </p>
 

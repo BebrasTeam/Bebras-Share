@@ -15,16 +15,16 @@
     <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
     <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
       <script class="task" type="text/javascript">
-         stdAnsTypes.genTaskMultipleChoices(4, [
-            "9時間",
-            "10時間",
-            "11時間",
-            "12時間"
-            ], "added", "#answers_2014-LT-02",true);
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "「川の中」で遊んだ",
+            "「川辺」で遊んだ",
+            "「家の中」で遊んだ",
+            "遊ばなかった"
+            ], "added", "#answers_2014-JP-05A");
       </script>
 
       <script class="remove" type="text/javascript">var json = {
-    "id": "http://castor-informatique.fr/tasks/2014/2014-LT-02/",
+    "id": "http://castor-informatique.fr/tasks/2014/2014-JP-05A/",
     "language": "fr",
     "version": "fr.01",
     "authors": "",
@@ -33,20 +33,23 @@
     "taskPathPrefix": "",
     "modulesPathPrefix": "",
     "browserSupport": [],
-    "acceptedAnswers": ["3"]
+    "acceptedAnswers": ["4"]
 };</script>
    </head>
    <body>
       <div id="task"> <!-- 問題内容 -->
-<h1>ダム</h1>
-<p>ビ太郎は，草地に水を流して水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）広げることにしました。<br />
-水がまだ入っていない草地（<img src="grass.png" alt="草地" title="草地" width="20" height="17" />）は，隣（となり）が水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）になると１時間後にそこから水が流れ込み，水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）になります。<br />
-（隣は上か下か左か右の場所だけで，斜めの場所からは水は流れ込みません。）<br />
-また，丘（<img src="hill.png" alt="丘" title="丘" width="21" height="20" />）には水は流れ込みません。</p>
-<p><img src="2014-LT-02.png" alt="ダム 問題" title="ダム 問題" width="216" height="214" /></p>
-<p><strong>すべての草地に水が流れこむまでに何時間かかるでしょうか？</strong></p>
+<h1>遊び場</h1>
+<p>ビ太郎は，その日と前の日の天気で遊ぶ場所を決めています。</p>
+<div style="text-align:center"><p><img src="2014-JP-05-ThinkingPlace.png" alt="遊び場 説明" title="遊び場 説明" width="320" height="205" /></p></div>
+<ul class="list1" ><li>今日が晴れで昨日が雨のときは，「川の中」で泳ぎます。</li>
+<li>今日が晴れで昨日も晴れのときは，「川辺」で遊びます。</li>
+<li>今日が雨で昨日が晴れのときは，「家の中」でつみ木を使って遊びます。</li>
+<li>今日が雨で昨日も雨のときは，遊びません。</li></ul>
+<p>11月1日から11月８日の天気は次のようになっていました。</p>
+<p><img src="jp-05.png" alt="遊び場 問題" title="遊び場 問題" width="561" height="90" /></p>
+<p><strong>ビ太郎は，11月7日はどこで遊んだでしょうか？</strong></p>
 
-<div class="reponses" id="answers_2014-LT-02">
+<div class="reponses" id="answers_2014-JP-05A">
 </div>
 
 </div> <!-- 問題終わり -->
@@ -54,14 +57,16 @@
 
       <div id="solution"> <!-- 解答内容 -->
 <h2>解答</h2>
-<ul class="list1" ><li>正解は11時間です。
-<ul class="list2" ><li>下の絵のように，水は川から1時間に1マスずつ草地に入ってきます。</li>
-<li>最後の草地に水が入るのは11時間後です。
-<div style="text-align:center"><p><img src="LT-2-map_with_pictures_explanation.png" alt="ダム説明" title="ダム説明" width="160" height="158" /></p></div></li></ul></li>
+<ul class="list1" ><li>正解は「遊ばなかった」です。
+<ul class="list2" ><li>ビ太郎は今日が雨で昨日も雨のときは遊びません。</li>
+<li>今日（11月7日）は雨で昨日（11月6日）も雨でしたのでビ太郎は遊びませんでした。</li></ul></li>
 
 <h2>解説</h2>
-<ul class="list2" ><li>この問題では，水が草地に入っていくときに複数の経路（道）を通ります。そして、それぞれの経路の水は出発点から同じ速さで進んでいきます。</li>
-<li>このような複数の経路を同じ速さで並行して調べていく探索を「幅優先探索」と呼んでいます。（ひとつの経路をいちばん奥まで調べてから他の経路を探す探索は「深さ優先探索」と呼ばれます。）</li></ul>
+<ul class="list2" ><li>この問題は論理について考える問題です。</li>
+<li>「雨か晴れか」ということは論理値として考えることができます。</li>
+<li>今日が「雨か晴れか」と昨日が「雨か晴れか」ということは、2つの論理値の組み合わせで「昨日は晴れで今日も晴れ」「昨日は晴れで今日は雨」「昨日は雨で今日は晴れ」「昨日は雨で今日も雨」という4通りがあります。</li>
+<li>「「昨日は雨」で「今日も雨」」のような2つの論理値が両方とも成り立つ論理式を論理積（AND条件）といいます。</li>
+<li>コンピュータは「前の入力がTで次の入力がAのときは「た」に変換する」のように、論理値を利用したり論理積のような論理演算を数多く行いながら動作しています。</li></ul>
    
    
    

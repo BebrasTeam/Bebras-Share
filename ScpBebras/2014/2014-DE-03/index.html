@@ -1,0 +1,80 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>動きの検出</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "画像11をその１秒前の画像と比較した時",
+            "画像10をその１秒前の画像と比較した時",
+            "画像3をその１秒前の画像と比較した時",
+            "画像4をその１秒前の画像と比較した時"
+            ], "added", "#answers_2014-DE-03");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["1"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>動きの検出</h1>
+<p>
+<p>ビ太郎のお店では，コンピュータに接続されたカメラが特定の動きを検出するとベルが鳴るようになっています。<br />
+コンピュータはカメラの画像を1秒ごとに調べ，1秒前の画像と現在の画像の違いから動きを検出します。</p>
+<p>コンピュータには A, B, C 3つの状態があり，下の図のように移り変わります。最初の状態は A です。<br />
+矢印とそこに書かれた条件によって，コンピュータはある状態から別の状態に移ります。<br />
+状態が C から A に移ると，コンピュータはベルを鳴らします。</p>
+<p><img src="2014-DE-03-EN_Motion_Detection_Picture_State_Transition_Diagram_JP.png" alt="動きの検出 状態遷移" title="動きの検出 状態遷移" width="420" height="216" /></p>
+<p>上の図の中で，Lは「画像の左半分」を，Rは「画像の右半分」を表しています。</p>
+<p><img src="2014-DE-03-EN_Motion_Detection_Picture_Observation_Movie.png" alt="動きの検出 問題" title="動きの検出 問題" width="545" height="141" /></p>
+<p><strong>最初はコンピュータの状態は A でした。ベルが鳴るのはいつでしょうか？</strong></p>
+</p>
+
+<div class="reponses" id="answers_2014-DE-03">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+<ul class="list1" ><li>正解は「画像11をその１秒前の画像と比較した時」です。
+<ul class="list2" ><li>この問題のコンピュータは「左から右への動き」を検出したときにベルを鳴らします。</li>
+<li>それぞれの画像は次のような状態になります。
+<div class="ie5" ><table class="style_table" cellspacing="1" border="1"><tbody><tr><td class="style_td">画像0</td><td class="style_td">状態A</td></tr><tr><td class="style_td">画像1</td><td class="style_td">状態A</td></tr><tr><td class="style_td">画像2</td><td class="style_td">状態A</td></tr><tr><td class="style_td">画像3</td><td class="style_td">状態A</td></tr><tr><td class="style_td">画像4</td><td class="style_td">状態B</td></tr><tr><td class="style_td">画像5</td><td class="style_td">状態A</td></tr><tr><td class="style_td">画像6</td><td class="style_td">状態B</td></tr><tr><td class="style_td">画像7</td><td class="style_td">状態B</td></tr><tr><td class="style_td">画像8</td><td class="style_td">状態C</td></tr><tr><td class="style_td">画像9</td><td class="style_td">状態C</td></tr><tr><td class="style_td">画像10</td><td class="style_td">状態C</td></tr><tr><td class="style_td">画像11</td><td class="style_td">状態A（ベル）</td></tr></tbody></table></div></li></ul></li></ul>
+</p>
+
+<h2>解説</h2>
+<p>
+<ul class="list2" ><li>空港のようなセキュリティが重要な区域には監視カメラが設置されて画像を記録しています。</li>
+<li>監視カメラはコンピュータにも接続されていて，区域に入った人数を数えたり、危ない行動を検知したりします。</li>
+<li>行動を検知するプログラムはこの問題と同様に動きの状態を利用しています。</li></ul></li>
+</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

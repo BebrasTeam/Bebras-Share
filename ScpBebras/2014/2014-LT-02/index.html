@@ -3,7 +3,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>村のスピーカー</title>
+      <title>タイトル</title>
     <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
     <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
@@ -16,15 +16,15 @@
     <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
       <script class="task" type="text/javascript">
          stdAnsTypes.genTaskMultipleChoices(4, [
-            "2",
-            "3",
-            "4",
-            "5"
-            ], "added", "#answers_2014-JP-06",true);
+            "9時間",
+            "10時間",
+            "11時間",
+            "12時間"
+            ], "added", "#answers_2014-LT-02");
       </script>
 
       <script class="remove" type="text/javascript">var json = {
-    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "id": "http://castor-informatique.fr/tasks/2014/2014-LT-02/",
     "language": "fr",
     "version": "fr.01",
     "authors": "",
@@ -33,21 +33,20 @@
     "taskPathPrefix": "",
     "modulesPathPrefix": "",
     "browserSupport": [],
-    "acceptedAnswers": ["2"]
+    "acceptedAnswers": ["3"]
 };</script>
    </head>
    <body>
       <div id="task"> <!-- 問題内容 -->
-<h1>村のスピーカー</h1>
-<p>
-<p>村の地図で縦と横の線が交わる場所にだけ，スピーカーを置くことができます。スピーカーの音が届く範囲は，次の図のようにスピーカー（<span style="color:red">★</span>印）の周りにある12個の灰色のブロックです。</p>
-<div style="text-align:center"><p><img src="2014-JP-06-fig1.png" alt="村のスピーカー 説明" title="村のスピーカー 説明" width="117" height="117" /></p></div>
-<p>次の図はビーバー村の地図です。▲印の場所に家があります。</p>
-<div style="text-align:center"><p><img src="2014-JP-06-fig2.png" alt="村のスピーカー 問題" title="村のスピーカー 問題" width="205" height="205" /></p></div>
-<p><strong>すべての家にお知らせが届くのに必要なスピーカーの最小台数は，いくつですか？</strong></p>
-</p>
+<h1>ダム</h1>
+<p>ビ太郎は，草地に水を流して水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）広げることにしました。<br />
+水がまだ入っていない草地（<img src="grass.png" alt="草地" title="草地" width="20" height="17" />）は，隣（となり）が水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）になると１時間後にそこから水が流れ込み，水が入った場所（<img src="water.png" alt="水" title="水" width="21" height="19" />）になります。<br />
+（隣は上か下か左か右の場所だけで，斜めの場所からは水は流れ込みません。）<br />
+また，丘（<img src="hill.png" alt="丘" title="丘" width="21" height="20" />）には水は流れ込みません。</p>
+<p><img src="2014-LT-02.png" alt="ダム 問題" title="ダム 問題" width="216" height="214" /></p>
+<p><strong>すべての草地に水が流れこむまでに何時間かかるでしょうか？</strong></p>
 
-<div class="reponses" id="answers_2014-JP-06">
+<div class="reponses" id="answers_2014-LT-02">
 </div>
 
 </div> <!-- 問題終わり -->
@@ -55,27 +54,17 @@
 
       <div id="solution"> <!-- 解答内容 -->
 <h2>解答</h2>
-<p>
-<ul class="list1" ><li>正解は「3」です。
-<ul class="list2" ><li>2個のスピーカーではすべての家にお知らせを届けることはできません。</li>
-<li>3個のスピーカーでは，次のどちらかの置き方で，すべての家にお知らせを届けることができます。
-<div style="text-align:center"><p><img src="2014-JP-06-fig_ans1.png" alt="村のスピーカー説明1" title="村のスピーカー説明1" width="206" height="205" />　<img src="2014-JP-06-fig_ans2.png" alt="村のスピーカー説明2" title="村のスピーカー説明2" width="206" height="206" /></p></div></li></ul></li>
-<li>試してみよう
-<ul class="list2" ><li>線と線が交わる場所をクリックすると，そこにスピーカー（<span style="color:red;"  class="qhm-deco">★</span>印）を置けます。</li>
-<li>スピーカー（<span style="color:red;"  class="qhm-deco">★</span>印）をクリッすると，そのスピーカーを取り除けます。
-<iframe width="650" height="500" src="speaker_sol.html" frameborder="0" allowfullscreen></iframe>
-</li></ul></li>
-</p>
+<ul class="list1" ><li>正解は11時間です。
+<ul class="list2" ><li>下の絵のように，水は川から1時間に1マスずつ草地に入ってきます。</li>
+<li>最後の草地に水が入るのは11時間後です。
+<div style="text-align:center"><p><img src="LT-2-map_with_pictures_explanation.png" alt="ダム説明" title="ダム説明" width="160" height="158" /></p></div></li></ul></li>
 
 <h2>解説</h2>
-<p>
-<ul class="list2" ><li>できるだけ少ない機器で必要なエリア（領域）をカバーする技術は，携帯電話の通信用のアンテナをどのように配置するかといった形で世の中で使われています。</li></ul></li>
-<li>出題国: この問題は日本で作成されました。</li></ul>
-
-</p>
-
-
-
+<ul class="list2" ><li>この問題では，水が草地に入っていくときに複数の経路（道）を通ります。そして、それぞれの経路の水は出発点から同じ速さで進んでいきます。</li>
+<li>このような複数の経路を同じ速さで並行して調べていく探索を「幅優先探索」と呼んでいます。（ひとつの経路をいちばん奥まで調べてから他の経路を探す探索は「深さ優先探索」と呼ばれます。）</li></ul>
+   
+   
+   
 </div> <!-- 解答終わり -->
    </body>
 </html>

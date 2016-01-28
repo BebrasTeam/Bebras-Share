@@ -1,0 +1,74 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>おもしろいまど</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "<img src='yacht_answer-a.png'width='300'>",
+            "<img src='yacht_answer-b.png'width='300'>",
+            "<img src='yacht_answer-c.png'width='300'>",
+            "<img src='yacht_answer-d.png'width='300'>"
+            ], "added", "#answers_2014-CA-05");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2014/2014-CA-05/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["3"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>とうめいなまど</h1>
+<p>透明（とうめい）か灰色の窓（まど）をもつ船があります。<br />
+船の横から見ると，反対側の窓（まど）が透（す）けて見え，もう一方の窓（まど）の色によって，どのように見えるかが変わります。</p>
+<p>両方とも透明（とうめい）なら透明（とうめい）に，ひとつが透明（とうめい）でもう一つが灰色なら灰色に，両方とも灰色なら黒く見えます。</p>
+<div style="text-align:center"><p><img src="yacht_example.png" alt="おもしろいまど 説明" title="おもしろいまど 説明" width="461" height="93" /></p></div>
+<p>船長のビ太郎は船の両側の窓（まど）の色を次の絵のように決めました。</p>
+<div class="ie5" ><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td"><img src="yacht_yacht-left.png" alt="おもしろいまど 問題1" title="おもしろいまど 問題1" width="258" height="117" /></td><td class="style_td"><img src="yacht_yacht-right.png" alt="おもしろいまど 問題2" title="おもしろいまど 問題2" width="258" height="117" /></td></tr></tbody></table></div>
+<p><strong>横から見たときにどのように見えるでしょうか？横から見ると反対側の窓（まど）はすけて見えています。</strong></p>
+
+<div class="reponses" id="answers_2014-CA-05">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<ul class="list1" ><li>正解は次の絵です。
+<div style="text-align:center"><p><img src="yacht_answer-c.png" alt="おもしろいまど 正解" title="おもしろいまど 正解" width="411" height="30" /></p></div>
+<ul class="list2" ><li>問題で，船の両側の窓の絵は、船の先頭が反対方向を向いています。</li>
+<li>錨（イカリ）の位置に注目することで，どの窓がどの窓と対応するかを知ることができます。</li></ul></li>
+
+<h2>解説</h2>
+<ul class="list2" ><li>コンピュータは情報を0と1の2種類の値を組合せて扱います。</li>
+<li>この問題では，左右の窓は0（白）と1（灰色）で表されています。</li>
+<li>この問題を解くひとつの方法は，ORの演算とXORの演算をすることです。ORは「両方またはどちらかの値が1ならば結果は1（そうでなければ0）」，XORは「どちらか一方の値が1ならば結果は1（そうでなければ0）」という演算です。
+<ul class="list3" ><li>窓の色を「0（白）と1（灰色）」と考えてORの演算をすることで結果が「0（白）か1（灰色か黒）」がわかる。</li>
+<li>窓の色を「0（白）と1（灰色）」と考えてXORの演算をすることで結果が「0（白か黒）か1（灰色）」がわかる。</li></ul></li>
+<li>もうひとつの方法は，それぞれの窓を「0（白）と1（灰色）」という数字で並べて足し算をすることです。すると「0 1 1 1 0 0 1 0」＋「0 0 0 1 1 0 1 1」＝「0 1 1 2 1 0 2 1」という結果になり，「0の窓は白，1の窓は灰色，2の窓は黒」に見えることがわかります。</li></ul>  
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>

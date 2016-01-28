@@ -1,0 +1,86 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>みつばちロボット</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "四角，回る，進む，三角",
+            "四角，進む，回る，三角",
+            "三角，回る，四角",
+            "四角，進む，四角，回る，三角"
+            ], "added", "#answers_2014-SK-07");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2015/choice_tmp/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["2"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>みつばちロボット</h1>
+<p>
+<p>ビ太郎はみつばちのロボットを作りました。このロボットは床に線を描いたり、線の上を飛ぶことができます。</p>
+<div class="ie5" ><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">四角: 今いる場所から時計回りに正方形を描きます</td><td class="style_td"><img src="2014-SK-07-JP_example-square.png" alt="みつばちロボット 命令四角" title="みつばちロボット 命令四角" width="156" height="58" /></td></tr><tr><td class="style_td">三角: 今いる場所から時計回りに三角形を描きます</td><td class="style_td"><img src="2014-SK-07-JP_example-triangle.png" alt="みつばちロボット 命令三角" title="みつばちロボット 命令三角" width="156" height="44" /></td></tr><tr><td class="style_td">進む: 今いる場所から進行方向に線の端まで進みます</td><td class="style_td"><img src="2014-SK-07-JP_example-go.png" alt="みつばちロボット 命令進む" title="みつばちロボット 命令進む" width="187" height="70" /></td></tr><tr><td class="style_td">回る: 右回りに次の線まで回ります</td><td class="style_td"><img src="2014-SK-07-JP_example-turn.png" alt="みつばちロボット 命令回る" title="みつばちロボット 命令回る" width="296" height="59" /></td></tr></tbody></table></div>
+<p>「四角，進む，回る，進む，三角」の命令を受け取ると，みつばちはこのような図形を描きます。</p>
+<p><img src="2014-SK-07-JP_sequence.png" alt="みつばちロボット 例" title="みつばちロボット 例" width="566" height="76" /></p>
+<p><strong>どのような命令を受け取ると、みつばちは次の絵を描くでしょうか？</strong><br />
+<img src="2014-SK-07-JP_question.png" alt="みつばちロボット 問題" title="みつばちロボット 問題" width="94" height="91" /></p>
+</p>
+
+<div class="reponses" id="answers_2014-SK-07">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<p>
+<ul class="list1" ><li>正解は「四角， 進む， 回る， 三角」です。
+<ul class="list2" ><li>「四角， 回る， 進む， 三角」では，みつばちロボットはこのように描きます。<br />
+<img src="2014-SK-07-JP-explan-a-fig.png" alt="みつばちロボット説明1" title="みつばちロボット説明1" width="402" height="65" /></li>
+<li>「四角， 進む， 回る， 三角」では，みつばちロボットはこのように描きます。<br />
+<img src="2014-SK-07-JP-explan-b-fig.png" alt="みつばちロボット説明2" title="みつばちロボット説明2" width="402" height="65" /></li>
+<li>「三角， 回る， 四角」では，みつばちロボットはこのように描きます。<br />
+<img src="2014-SK-07-explan-c-fig.png" alt="みつばちロボット説明3" title="みつばちロボット説明3" width="322" height="64" /></li>
+<li>「四角， 進む， 四角， 回る， 三角」では，みつばちロボットはこのように描きます。<br />
+<img src="2014-SK-07-explan-d-fig.png" alt="みつばちロボット説明4" title="みつばちロボット説明4" width="470" height="94" /></li></ul></li>
+<li>試してみよう
+<ul class="list2" ><li>命令をどのように組み合わせると，みつばちロボットがどのように動くか試せます。
+<iframe width="850" height="520" src="bee_sol.html" frameborder="0" allowfullscreen></iframe>
+</li></ul></li>
+</p>
+
+<h2>解説</h2>
+<p>
+<li>解説
+<ul class="list2" ><li>コンピュータは命令を順番に実行することでさまざまな処理を行います。この問題は命令を順番に実行するコンピュータの処理を表しています。</li>
+<li>この問題で使われた「前進や回転の命令で移動し，移動した軌跡が線として残る」仕組みは，LOGOという教育用のプログラミング言語で提案され，現在もドリトルやScratchなどの言語で使われています。</li></ul></li></ul>
+</p>
+
+
+
+</div> <!-- 解答終わり -->
+   </body>
+</html>

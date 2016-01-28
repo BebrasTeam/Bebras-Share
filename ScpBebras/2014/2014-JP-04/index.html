@@ -1,0 +1,75 @@
+<!-- "__"を設定!! -->
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>タイトル</title>
+    <link class="module" rel="stylesheet" href="../../modules/pemFioi/taskStyles-0.1.css" id="http://www.france-ioi.org/modules/pemFioi/taskStyles-0.1.css">
+    <script class="module" src="../../modules/ext/jquery/1.7/jquery.min.js" id="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/ext/json/json2.min.js" id="https://github.com/douglascrockford/JSON-js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/installation.js"></script>
+    <script class="proxy module" type="text/javascript" src="../../modules/integrationAPI.01/official/platform-pr.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/platform-pr.js"></script>
+    <script class="module" type="text/javascript" src="../../modules/pemFioi/beaver-task.js" id="http://www.france-ioi.org/modules/pemFioi/beaver-task.js"></script>
+    <script class="stdAnswerTypes module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.js"></script>
+    <link class="stdAnswerTypes module" rel="stylesheet" type="text/css" href="../../modules/integrationAPI.01/installationAPI.01/pemFioi/answerTypes.css" id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/stdAnsTypes.css" />
+    <script class="stdButtonsAndMessages module" type="text/javascript" src="../../modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"  id="http://www.france-ioi.org/modules/integrationAPI.01/installationAPI.01/pemFioi/buttonsAndMessages.js"></script>
+    <script class="remove" type="text/javascript" src="../../modules/integrationAPI.01/official/miniPlatform.js" id="http://www.france-ioi.org/modules/integrationAPI.01/official/miniPlatform.js"></script>
+      <script class="task" type="text/javascript">
+         stdAnsTypes.genTaskMultipleChoices(1, [
+            "サーモン，サーモン，サーモン",
+            "サーモン，エビ，サーモン",
+            "サーモン，ホタテ，エビ",
+            "サーモン，巻きずし，エビ"
+            ], "added", "#answers_2014-JP-04");
+      </script>
+
+      <script class="remove" type="text/javascript">var json = {
+    "id": "http://castor-informatique.fr/tasks/2014/2014-JP-04/",
+    "language": "fr",
+    "version": "fr.01",
+    "authors": "",
+    "translators": [],
+    "license": "",
+    "taskPathPrefix": "",
+    "modulesPathPrefix": "",
+    "browserSupport": [],
+    "acceptedAnswers": ["3"]
+};</script>
+   </head>
+   <body>
+      <div id="task"> <!-- 問題内容 -->
+<h1>回転寿司</h1>
+<p>ビ太郎とビバ子とマイ子は回転寿司のお店に行きました。お客さんの前にはお皿に乗ったお寿司が流れていて，好きなお皿を取っていきます。<br />
+お寿司は「エビ」「ホタテ」「サーモン」「巻きずし」があり，この順に何度も流れてきます。</p>
+<p><img src="2014-JP-04-sushi-JP.png" alt="回転寿司 問題" title="回転寿司 問題" width="552" height="156" /></p>
+<ul class="list1" ><li>ビ太郎はエビを取ります。</li>
+<li>ビバ子は次のお皿を取ります。</li>
+<li>マイ子は次のお皿を取ります。</li></ul>
+<p>このように，3人で順番にお皿を取っていきます。<br />
+3人はお皿を1枚ずつ取ります。<br />
+取れるお皿をとばすことはありません。</p>
+<p><strong>マイ子が取った最初の3枚に乗っていたお寿司を順番に書くとどれになるでしょう？</strong></p>
+
+<div class="reponses" id="answers_2014-JP-04">
+</div>
+
+</div> <!-- 問題終わり -->
+
+
+      <div id="solution"> <!-- 解答内容 -->
+<h2>解答</h2>
+<ul class="list1" ><li>正解は「サーモン， ホタテ， エビ」です。
+<ul class="list2" ><li>3人は流れてくる4種類の寿司を順番に取っていきます。</li>
+<li>流れてくる寿司から順番に3個ずつ取ったときはこのようになっています。
+<div class="ie5" ><table class="style_table" cellspacing="1" border="0"><tbody><tr><td class="style_td">ビ太郎</td><td class="style_td">ビバ子</td><th class="style_th">マイ子</th><td class="style_td">ビ太郎</td><td class="style_td">ビバ子</td><th class="style_th">マイ子</th><td class="style_td">ビ太郎</td><td class="style_td">ビバ子</td><th class="style_th">マイ子</th></tr><tr><td class="style_td">エビ</td><td class="style_td">ホタテ</td><td class="style_td">サーモン</td><td class="style_td">巻き寿司</td><td class="style_td">エビ</td><td class="style_td">ホタテ</td><td class="style_td">サーモン</td><td class="style_td">巻き寿司</td><td class="style_td">エビ</td></tr></tbody></table></div></li></ul></li>
+
+<h2>解説</h2>
+<ul class="list2" ><li>この問題では，規則に基づくコンピュータの資源割り当てを扱っています。</li>
+<li>例えば，コンピュータの記憶装置では，一続きのデータを分割し複数のディスクに書いていくことにより，データを記録する速度を高める工夫がなされていることがあります。</li>
+<li>この問題では，お客はファイルでお皿は記憶装置と見立てることができます。</li></ul></li>
+   
+   
+   
+</div> <!-- 解答終わり -->
+   </body>
+</html>
