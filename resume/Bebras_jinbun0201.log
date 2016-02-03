@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.12)  1 FEB 2016 19:13
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.12)  3 FEB 2016 12:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -295,7 +295,7 @@ Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
 \@bcal=\count144
 \shaderule=\dimen155
 ))
-No file Bebras_jinbun0201.aux.
+(./Bebras_jinbun0201.aux)
 \openout1 = `Bebras_jinbun0201.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -323,6 +323,7 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
 LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -340,50 +341,17 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 35.
 
-
-LaTeX Warning: Citation `bebras-contest' on page 1 undefined on input line 39.
-
-
-LaTeX Warning: Citation `bebras-pdf' on page 1 undefined on input line 39.
-
-
-LaTeX Warning: Citation `ioi' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Citation `joi' on page 1 undefined on input line 47.
-
-
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [1
 
 ]
-
-LaTeX Warning: Citation `git' on page 2 undefined on input line 66.
-
-
-LaTeX Warning: Citation `bower' on page 2 undefined on input line 70.
-
-
-LaTeX Warning: Citation `composer' on page 2 undefined on input line 73.
-
-
-LaTeX Warning: Citation `dbv' on page 2 undefined on input line 77.
-
-
-LaTeX Warning: Citation `i18n' on page 2 undefined on input line 80.
-
-
-LaTeX Warning: Reference `fig:1' on page 2 undefined on input line 84.
-
 File: img/bebras_top.jpg Graphic file (type eps)
+
 <img/bebras_top.jpg>
 Overfull \hbox (4.58475pt too wide) in paragraph at lines 89--90
  [] 
  []
-
-
-LaTeX Warning: Reference `fig:2' on page 2 undefined on input line 94.
 
 File: img/admin_top.jpg Graphic file (type eps)
 <img/admin_top.jpg>
@@ -408,21 +376,14 @@ Overfull \vbox (3.0pt too high) has occurred while \output is active []
 Overfull \vbox (3.0pt too high) has occurred while \output is active []
 
  [4]
-(./Bebras_jinbun0201.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./Bebras_jinbun0201.aux) ) 
 Here is how much of TeX's memory you used:
- 2362 strings out of 493777
- 30452 string characters out of 6151334
+ 2364 strings out of 493777
+ 30496 string characters out of 6151334
  105358 words of memory out of 5000000
  5812 multiletter control sequences out of 15000+600000
  13294 words of font info for 55 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 42i,10n,42p,615b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,42p,615b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Bebras_jinbun0201.dvi (4 pages, 23292 bytes).
+Output written on Bebras_jinbun0201.dvi (4 pages, 23304 bytes).
